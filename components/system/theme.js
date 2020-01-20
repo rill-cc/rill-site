@@ -22,6 +22,12 @@ const colors = {
 		'rgba(0,0,0,.56)',
 		],
 	white: '#FFF',
+	whites: [
+		'rgba(255,255,255,.16)',
+		'rgba(255,255,255,.32)',
+		'rgba(255,255,255,.56)',
+	],
+	accent: '#F7FAFF',
 }
 
 const fonts = {

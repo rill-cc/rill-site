@@ -39,6 +39,7 @@ export default {
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
+
 	ccc: {
 		flexDirection: 'column',
 		justifyContent: 'center',
@@ -58,6 +59,11 @@ export default {
 		flexDirection: 'column',
 		justifyContent: 'flex-start',
 		alignItems: 'center',
+	},
+	cse: {
+		flexDirection: 'column',
+		justifyContent: 'flex-start',
+		alignItems: 'flex-end',
 	},
 	cbs: {
 		flexDirection: 'column',
