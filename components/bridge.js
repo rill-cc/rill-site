@@ -2,7 +2,7 @@ import { Layout } from './Layout'
 
 
 import Intro from './Intro'
-// import For from './For'
+import For from './For'
 // import How from './How'
 // import Utilities from './Utilities'
 // import Contents from './Contents'
@@ -17,4 +17,5 @@ import Intro from './Intro'
 export {
 	Layout,	
 	Intro,
+	For,
 }

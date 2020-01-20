@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text } from './system'
+import { Flex, Grid, Text, Image } from './system'
 import { Layout } from './bridge'
 
 const Intro = props => {
@@ -41,12 +41,12 @@ useEffect(() => {
 				ref={ref}
 				gridColumn='7/-1'
 				bg='black'
-				height='400px'
 				sx={{
 					borderBottom: '1px solid',
 					borderColor: 'whites.0',
 				}}
 			>
+			<Image src='/images/video.png' alt='platform'/>
 			</Grid>
 
 			<Grid

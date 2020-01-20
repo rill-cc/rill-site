@@ -3,7 +3,8 @@ import { Theme } from '../components/system/theme'
 import { Meta } from '../components/Meta'
 
 import {
-  Intro,  
+  Intro,
+  For,
 } from '../components/bridge'
 
 import HelperGrid from '../components/Utils'
@@ -11,8 +12,9 @@ import HelperGrid from '../components/Utils'
 const App = props => {
   return (
     <Theme>
-      <HelperGrid/>
-      <Intro/>
+      <HelperGrid />
+      <Intro />
+      <For />
     </Theme>
     )
 }
