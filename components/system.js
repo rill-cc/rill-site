@@ -38,7 +38,7 @@ export const Button = forwardRef((props, ref) =>
       color: 'white',
       bg: 'primary',
       border: 0,
-      borderRadius: 4,
+      borderRadius: 0,
     }}
   />
 )

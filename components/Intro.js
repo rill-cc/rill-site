@@ -32,7 +32,7 @@ useEffect(() => {
 				}}
 			>
 				<Flex flexes='css' p={4}>
-					<Text variant='s1' decoration='caps'>RILL.</Text>
+					<Text variant='s1' decor='caps'>RILL.</Text>
 					<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
 				</Flex>
 			</Grid>
@@ -65,7 +65,7 @@ useEffect(() => {
 						borderColor: 'blacks.1',
 						}}
 				>
-					<Text variant='s3' decoration='caps' color='blacks.3'>Your email</Text>
+					<Text variant='s3' decor='caps' color='blacks.3'>Your email</Text>
 				</Flex>
 			</Grid>
 

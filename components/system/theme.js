@@ -53,9 +53,15 @@ const text = {
 	},
 }
 
-const decoration = {
-	underline: { textDecoration: 'underline' },
+const decor = {
 	caps: { textTransform: 'uppercase' },
+}
+
+const links = {
+	underline: {
+		borderBottom: '1px solid',
+		borderColor: 'blacks.2',
+	},
 }
 
 const variants = {
@@ -70,7 +76,8 @@ const theme = {
 	text,
 	variants,
 	flexes,
-	decoration,
+	decor,
+	links,
 }
 
 const Global = injectGlobal`
@@ -116,6 +123,7 @@ const Global = injectGlobal`
 		text-decoration: none;
 		color: inherit;
 		cursor: pointer;
+		border-bottom: 1px solid ${colors.transparent};
 	}
 
 	h1, h2, h3, h4, p, a, span {
