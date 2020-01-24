@@ -12,7 +12,7 @@
 
 #### Install:
 
-`yarn install`
+`npm i`
 
 #### Run:
 
