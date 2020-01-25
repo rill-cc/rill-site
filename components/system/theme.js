@@ -10,7 +10,17 @@ breakpoints.md	= breakpoints[2] // 1024
 breakpoints.lg	= breakpoints[3] // 1280
 breakpoints.xlg	= breakpoints[4] // 1440+
 
-const space = [0, 8, 16, 24, 32, 48, 64, 80, 112]
+const space = [
+	0,
+	'0.5rem',	// 1
+	'1rem',		// 2
+	'1.5rem',	// 3
+	'2rem',		// 4
+	'3rem',		// 5
+	'4rem',		// 6
+	'5rem',		// 7
+	'7rem',		// 8
+]
 
 const colors = {
 	transparent: 'rgba(0,0,0,.0)',

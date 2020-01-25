@@ -5,18 +5,17 @@ import { Meta } from '../components/Meta'
 import {
   Intro,
   For,
+  How,
 } from '../components/bridge'
 
 import HelperGrid from '../components/Utils'
 
-const App = props => {
-  return (
-    <Theme>
-      <HelperGrid />
-      <Intro />
-      <For />
-    </Theme>
-    )
-}
+const App = props =>
+  <Theme>
+    <HelperGrid />
+    <Intro />
+    <For />
+    <How />
+  </Theme>
 
 export default App

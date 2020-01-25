@@ -3,7 +3,7 @@ import * as C from './Content'
 
 import Intro from './Intro'
 import For from './For'
-// import How from './How'
+import How from './How'
 // import Utilities from './Utilities'
 // import Contents from './Contents'
 // import QA from './QA'
@@ -19,4 +19,5 @@ export {
 	Layout,	
 	Intro,
 	For,
+	How,
 }

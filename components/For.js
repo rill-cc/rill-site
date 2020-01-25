@@ -1,16 +1,15 @@
-import React, { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { Flex, Grid, Text, Link } from './system'
 import { Layout } from './bridge'
 import { Tab, ResearcherC, ActivistC, ObserverC } from './ForEls'
 
 const For = props => {
-
-const [activeTab, setActiveTab] = useState('Researcher')
-const handleTabs = (e) => {
-	if (e.target.name === 'Researcher') {setActiveTab('Researcher')}
-	if (e.target.name === 'Activist') {setActiveTab('Activist')}
-	if (e.target.name === 'Observer') {setActiveTab('Observer')}
-}
+	const [activeTab, setActiveTab] = useState('Researcher')
+	const handleTabs = (e) => {
+		if (e.target.name === 'Researcher') {setActiveTab('Researcher')}
+		if (e.target.name === 'Activist') {setActiveTab('Activist')}
+		if (e.target.name === 'Observer') {setActiveTab('Observer')}
+	}
 
 	return (
 	<Flex>

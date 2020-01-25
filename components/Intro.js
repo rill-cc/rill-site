@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { Flex, Grid, Text, Image } from './system'
 import { Layout } from './bridge'
 
