@@ -1,19 +1,11 @@
 import { Flex, Grid, Text } from './system'
-import { C, Layout } from './bridge'
+import { C, Layout, Heading } from './bridge'
 import { LiItem } from './HowEls'
 
 const How = props =>
-	<Flex as='details' open>
+	<Flex>
 
-		<Text as='summary'
-			width='100%'
-			variant='s1'
-			decor='caps'
-			py={6}
-			px={4}
-		>
-			How
-		</Text>
+		<Heading>How</Heading>
 
 		<Layout as='ul'>
 
