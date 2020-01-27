@@ -28,7 +28,7 @@ useEffect(() => {
 				bg='accent'
 				sx={{
 					borderBottom: '1px solid',
-					borderColor: 'blacks.1',
+					borderColor: 'blacks.0',
 				}}
 			>
 				<Flex flexes='css' p={4}>

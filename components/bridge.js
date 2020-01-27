@@ -1,5 +1,6 @@
 import { Layout } from './Layout'
 import { Heading } from './Heading'
+import { Section } from './Section'
 import * as C from './Content'
 
 import Intro from './Intro'
@@ -19,6 +20,7 @@ export {
 	C,
 	Layout,	
 	Heading,
+	Section,
 	Intro,
 	For,
 	How,
