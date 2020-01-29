@@ -20,29 +20,16 @@ const LiItem = props =>
 		{...props}
 	/>
 
-// Pull copy for researcher
-export const ResearcherC = C.For.researcher.map(item =>
+const List = ({items}) => items.map(item =>
 	<LiItem key={item.id}>
-		<Text variant='s3' pb={{all: 8}}>{item.title}</Text>
+		<Text variant='s3' pb={8}>{item.title}</Text>
 		<Text variant='s3' color='blacks.3'>{item.desc}</Text>
 	</LiItem>
-)
+	)
 
-// Pull copy for activist
-export const ActivistC = C.For.activist.map(item =>
-	<LiItem key={item.id}>
-		<Text variant='s3' pb={{all: 8}}>{item.title}</Text>
-		<Text variant='s3' color='blacks.3'>{item.desc}</Text>
-	</LiItem>
-)
-
-// Pull copy for observer
-export const ObserverC = C.For.observer.map(item =>
-	<LiItem key={item.id}>
-		<Text variant='s3' pb={{all: 8}}>{item.title}</Text>
-		<Text variant='s3' color='blacks.3'>{item.desc}</Text>
-	</LiItem>
-)
+export const ResearcherC = () => <List items={C.For.researcher} />
+export const ActivistC = () => <List items={C.For.activist} />
+export const ObserverC = () => <List items={C.For.observer} />
 
 // Make tab switch
 export const Tab = props =>

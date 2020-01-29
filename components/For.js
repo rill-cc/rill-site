@@ -5,11 +5,7 @@ import { Tab, ResearcherC, ActivistC, ObserverC } from './ForEls'
 
 const For = props => {
 	const [activeTab, setActiveTab] = useState('Researcher')
-	const handleTabs = (e) => {
-		if (e.target.name === 'Researcher') {setActiveTab('Researcher')}
-		if (e.target.name === 'Activist') {setActiveTab('Activist')}
-		if (e.target.name === 'Observer') {setActiveTab('Observer')}
-	}
+	const handleTabs = (e) => setActiveTab(e.target.name)
 
 	return (
 	<Flex>
@@ -32,9 +28,9 @@ const For = props => {
 			</Grid>
 
 		</Layout>
-		{activeTab === 'Researcher' && ResearcherC}
-		{activeTab === 'Activist' && ActivistC}
-		{activeTab === 'Observer' && ObserverC}
+		{activeTab === 'Researcher' && <ResearcherC />}
+		{activeTab === 'Activist' && <ActivistC />}
+		{activeTab === 'Observer' && <ObserverC />}
 	</Flex>
 	)
 }
