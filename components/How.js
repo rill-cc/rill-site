@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { Flex, Grid, Text } from './system'
 import { C, Section } from './bridge'
-import { LiItem } from './HowEls'
 
 import { Fig01 } from './Figures.js'
 
@@ -13,11 +12,6 @@ const Utilities = props =>
 			py={6}
 			px={4}
 			gridTemplateRows='max-content'
-			sx={{
-				borderTop: '1px solid',
-				borderBottom: '1px solid',
-				borderColor: 'blacks.0',
-			}}
 		>
 			<Text as='li' variant='s2' pb={3}>
 				{C.How.steps[0].id}<br/>

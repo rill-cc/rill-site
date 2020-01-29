@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { Flex, Grid, Text } from './system'
 import { C, Section } from './bridge'
-import { LiItem } from './HowEls'
+import { LiItem } from './UtilitiesEls'
 
 const Utilities = props =>
 	<Section heading='Utilities'>

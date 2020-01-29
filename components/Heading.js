@@ -8,7 +8,11 @@ export const Heading = props =>
 		decor='caps'
 		py={6}
 		px={4}
-		sx={{ position: 'relative' }}
+		sx={{
+			position: 'relative',
+			borderBottom: '1px solid',
+			borderColor: 'blacks.0',
+		}}
 	>
 		{props.children}
 		<Flex as='span'

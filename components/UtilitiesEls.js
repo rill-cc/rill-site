@@ -9,10 +9,6 @@ export const LiItem = props =>
 		sx={{
 			borderBottom: '1px solid',	
 			borderColor: 'blacks.0',
-			':first-child': {
-				borderTop: '1px solid',
-				borderColor: 'blacks.0',
-			}
 		}}
 		gridTemplateColumns='repeat(6, 1fr)'
 	>
