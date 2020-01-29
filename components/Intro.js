@@ -26,7 +26,7 @@ useEffect(handleVideoHeight, [ref])
 				}}
 			>
 				<Flex flexes='css' p={4}>
-					<Text variant='s1' decor='caps'>RILL.</Text>
+					<Text variant='s1' styling='caps'>RILL.</Text>
 					<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
 				</Flex>
 			</Grid>
@@ -59,7 +59,7 @@ useEffect(handleVideoHeight, [ref])
 						borderColor: 'blacks.1',
 						}}
 				>
-					<Text variant='s3' decor='caps' color='blacks.3'>Your email</Text>
+					<Text variant='s3' styling='caps' color='blacks.3'>Your email</Text>
 				</Flex>
 			</Grid>
 

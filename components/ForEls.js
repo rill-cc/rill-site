@@ -36,7 +36,7 @@ export const Tab = props =>
 	<Link
 		onClick={props.handleTabs}
 		name={props.name}
-		variant='s1' decor='caps'
+		variant='s1' styling='caps'
 		link={props.state === props.name ? 'underline' : null}
 	>
 	{props.name}

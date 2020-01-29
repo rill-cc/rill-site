@@ -16,7 +16,7 @@ const For = props => {
 				py={6}
 				px={4}
 			>
-				<Text variant='s1' decor='caps'>For</Text>
+				<Text variant='s1' styling='caps'>For</Text>
 			</Grid>
 
 			<Grid gridColumn='5/12'>

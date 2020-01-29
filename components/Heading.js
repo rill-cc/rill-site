@@ -5,7 +5,7 @@ export const Heading = props =>
 		onClick={props.onChange}
 		width='100%'
 		variant='s1'
-		decor='caps'
+		styling='caps'
 		py={6}
 		px={4}
 		sx={{

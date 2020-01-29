@@ -35,9 +35,9 @@ const flexes = variant({
 	prop: 'flexes',
 })
 /* Add text decoration */
-const decor = variant({
-	key: 'decor',
-	prop: 'decor',
+const styling = variant({
+	key: 'styling',
+	prop: 'styling',
 })
 
 export const Box = styled('div', {
@@ -49,7 +49,7 @@ export const Box = styled('div', {
 },
   base,
   flexes,
-  decor,
+  styling,
   __variant,
   variant,
   sx,
