@@ -3,7 +3,7 @@ import { Flex, Grid, Text } from './system'
 import { C, Section } from './bridge'
 import { LiItem } from './HowEls'
 
-import { Scheme01 } from './Schemas.js'
+import { Fig01 } from './Figures.js'
 
 const Utilities = props =>
 	<Section heading='How'>
@@ -35,7 +35,7 @@ const Utilities = props =>
 			bg='accent'
 			height='800px'
 		>
-			<Scheme01 />
+			<Fig01 />
 		</Grid>
 
 	</Section>

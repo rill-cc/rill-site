@@ -1,6 +1,5 @@
-export const Scheme01 = () => {
-	return (
-		<svg
+export const Fig01 = () =>
+	<svg
 		width="160"
 		height="96"
 		viewBox="0 0 160 96"
@@ -92,5 +91,3 @@ export const Scheme01 = () => {
 			stroke="black"
 		/>
 	</svg>
-		)
-}
