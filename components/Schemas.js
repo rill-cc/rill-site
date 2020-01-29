@@ -1,0 +1,96 @@
+export const Scheme01 = () => {
+	return (
+		<svg
+		width="160"
+		height="96"
+		viewBox="0 0 160 96"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path d="M64 48L88.5 7.5H120.5" stroke="black" />
+		<path d="M64.5 48L40 7.5H8" stroke="black" />
+		<path d="M64 48L88.5 88.5H152.5" stroke="black" />
+		<path d="M64.5 48L40 88.5H8" stroke="black" />
+		<rect
+			x="56.5"
+			y="40.5"
+			width="15"
+			height="15"
+			fill="white"
+			stroke="black"
+		/>
+		<rect
+			x="32.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="0.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="80.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="112.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="32.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="0.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="80.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="112.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="144.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+	</svg>
+		)
+}

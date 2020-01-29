@@ -3,35 +3,41 @@ import { Flex, Grid, Text } from './system'
 import { C, Section } from './bridge'
 import { LiItem } from './HowEls'
 
-const How = props =>
+import { Scheme01 } from './Schemas.js'
+
+const Utilities = props =>
 	<Section heading='How'>
 
-		<LiItem
-			row='1'
-			title={C.How[0].title}
-			desc={C.How[0].desc}
-		/>
-		<LiItem
-			row='2'
-			title={C.How[1].title}
-			desc={C.How[1].desc}
-		/>
-		<LiItem
-			row='3'
-			title={C.How[2].title}
-			desc={C.How[2].desc}
-		/>
+		<Grid as='ul'
+			gridColumn='1/7'
+			py={6}
+			px={4}
+			gridTemplateRows='max-content'
+			sx={{
+				borderTop: '1px solid',
+				borderBottom: '1px solid',
+				borderColor: 'blacks.0',
+			}}
+		>
+			<Text as='li' variant='s2' pb={3}>
+				{C.How.steps[0].id}<br/>
+				{C.How.steps[0].desc}
+			</Text>
+			<Text as='li' variant='s2'>
+				{C.How.steps[1].id}<br/>
+				{C.How.steps[1].desc}
+			</Text>
+		</Grid>
 
 		<Grid as='aside'
 			gridColumn='7/-1'
-			gridRow='1/4'
 			flexes='ccc'
 			bg='accent'
 			height='800px'
 		>
-			Image
+			<Scheme01 />
 		</Grid>
 
 	</Section>
 
-export default How
+export default Utilities

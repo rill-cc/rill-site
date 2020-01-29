@@ -6,7 +6,7 @@ import * as C from './Content'
 import Intro from './Intro'
 import For from './For'
 import How from './How'
-// import Utilities from './Utilities'
+import Utilities from './Utilities'
 // import Contents from './Contents'
 // import QA from './QA'
 // import Stages from './Stages'
@@ -24,4 +24,5 @@ export {
 	Intro,
 	For,
 	How,
+	Utilities,
 }
