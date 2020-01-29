@@ -15,7 +15,6 @@ export const Text = forwardRef((props, ref) =>
 export const Link = forwardRef((props, ref) =>
   <Text
     as='a'
-    variant='link'
     {...props}
   />
 )

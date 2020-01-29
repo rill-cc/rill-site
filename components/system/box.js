@@ -34,10 +34,15 @@ const flexes = variant({
 	key: 'flexes',
 	prop: 'flexes',
 })
-/* Add text decoration */
+/* Add text styling */
 const styling = variant({
 	key: 'styling',
 	prop: 'styling',
+})
+/* Add link styling */
+const links = variant({
+  key: 'links',
+  prop: 'link',
 })
 
 export const Box = styled('div', {
@@ -50,6 +55,7 @@ export const Box = styled('div', {
   base,
   flexes,
   styling,
+  links,
   __variant,
   variant,
   sx,

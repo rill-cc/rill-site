@@ -1,4 +1,5 @@
 import { Flex, Grid, Text } from './system'
+import { Pict01, Pict02, Pict03 } from './Pictograms'
 
 export const LiItem = props =>
 	<Grid as='li'
@@ -15,9 +16,15 @@ export const LiItem = props =>
 		<Text as='h3'
 			variant='s3'
 			gridColumn='1/-1'
-			pl={4}
+			pl={6}
+			sx={{ position: 'relative' }}
 		>
+			{props.icon === '1' && <Pict01 />}
+			{props.icon === '2' && <Pict02 />}
+			{props.icon === '3' && <Pict03 />}
+			
 			{props.title}
+			
 		</Text>
 		<Text
 			variant='s3'

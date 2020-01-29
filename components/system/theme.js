@@ -63,7 +63,7 @@ const text = {
 	},
 }
 
-const decor = {
+const styling = {
 	caps: { textTransform: 'uppercase' },
 }
 
@@ -86,7 +86,7 @@ const theme = {
 	text,
 	variants,
 	flexes,
-	decor,
+	styling,
 	links,
 }
 

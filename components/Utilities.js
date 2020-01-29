@@ -10,16 +10,19 @@ const Utilities = props =>
 			row='1'
 			title={C.Utilities[0].title}
 			desc={C.Utilities[0].desc}
+			icon='1'
 		/>
 		<LiItem
 			row='2'
 			title={C.Utilities[1].title}
 			desc={C.Utilities[1].desc}
+			icon='2'
 		/>
 		<LiItem
 			row='3'
 			title={C.Utilities[2].title}
 			desc={C.Utilities[2].desc}
+			icon='3'
 		/>
 
 		<Grid as='aside'

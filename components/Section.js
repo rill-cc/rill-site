@@ -23,6 +23,10 @@ export const Section = props => {
 			<Layout
 				ref={ref}
 				maxHeight={height}
+				sx={{
+					borderBottom: '1px solid',
+					borderColor: 'blacks.0',
+				}}
 				{...props}
 			>
 				{props.children}
