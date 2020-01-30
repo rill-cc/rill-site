@@ -1,14 +1,8 @@
 import { Flex } from './system'
 
 const Container = props =>
-	<Flex
-		sx={{
-			position: 'absolute',
-			top: 0,
-			bottom: 0,
-			my: 'auto',
-			left: 4,
-		}}
+	<Flex as='span'
+		mr={1}
 		{...props}
 	/>
 

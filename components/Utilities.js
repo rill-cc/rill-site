@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Flex, Grid, Text } from './system'
+import { Flex, Grid, Text, Image } from './system'
 import { C, Section } from './bridge'
 import { LiItem } from './UtilitiesEls'
 
@@ -25,15 +25,18 @@ const Utilities = props =>
 			icon='3'
 		/>
 
-		<Grid as='aside'
+		<Flex as='aside'
 			gridColumn='7/-1'
 			gridRow='1/4'
 			flexes='ccc'
 			bg='accent'
-			height='800px'
 		>
-			Image
-		</Grid>
+			<Image
+				src='/images/panel.png'
+				alt='panel'
+				width='66.66%'
+			/>
+		</Flex>
 
 	</Section>
 

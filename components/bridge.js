@@ -7,7 +7,7 @@ import Intro from './Intro'
 import For from './For'
 import How from './How'
 import Utilities from './Utilities'
-// import Contents from './Contents'
+import Regulation from './Regulation'
 // import QA from './QA'
 // import Stages from './Stages'
 // import Requests from './Requests'
@@ -25,4 +25,5 @@ export {
 	For,
 	How,
 	Utilities,
+	Regulation,
 }
