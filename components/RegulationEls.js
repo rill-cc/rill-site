@@ -3,7 +3,7 @@ import { Flex, Grid, Text, Image } from './system'
 import { Layout } from './Layout'
 
 const LiItem = props => 
-	<Flex as='li'
+	<Grid as='li'
 		width='33.33%'
 		height='100%'
 		p={3}
@@ -15,9 +15,10 @@ const LiItem = props =>
 			borderColor: 'blacks.0',
 		}}
 	>
-		<Text variant='s3' pb={1}>{props.liTitle}</Text>
+		<Text
+			variant='s3' pb={1}>{props.liTitle}</Text>
 		<Text variant='s3' color='blacks.3'>{props.liDesc}</Text>
-	</Flex>
+	</Grid>
 
 export const RowItem = props =>
 	<Layout gridColumn='1/-1'>
@@ -29,9 +30,22 @@ export const RowItem = props =>
 				borderRight: '1px solid',
 				borderColor: 'blacks.0',
 			}}
+			gridTemplateColumns='repeat(6, 1fr)'
 		>
-			<Text variant='s3' pb={2}>{props.rowTitle}</Text>
-			<Text variant='s3' color='blacks.3' alignSelf='end'>{props.rowDesc}</Text>
+			<Text
+				variant='s3'
+				pb={2}
+				gridColumn='1/4'
+			>
+				{props.rowTitle}
+			</Text>
+			<Text
+				variant='s3'
+				gridColumn='1/4'
+				color='blacks.3' alignSelf='end'
+			>
+				{props.rowDesc}
+			</Text>
 			
 		</Grid>
 
