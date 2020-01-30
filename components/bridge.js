@@ -8,7 +8,7 @@ import For from './For'
 import How from './How'
 import Utilities from './Utilities'
 import Regulation from './Regulation'
-// import QA from './QA'
+import QA from './QA'
 // import Stages from './Stages'
 // import Requests from './Requests'
 // import Outro from './Outro'
@@ -26,4 +26,5 @@ export {
 	How,
 	Utilities,
 	Regulation,
+	QA,
 }
