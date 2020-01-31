@@ -55,14 +55,17 @@ export const RowItem = props =>
 			height='100%'
 		>
 			<LiItem
+				key={props.id01}
 				liTitle={props.liTitle01}
 				liDesc={props.liDesc01}
 			/>
 			<LiItem
+				key={props.id02}
 				liTitle={props.liTitle02}
 				liDesc={props.liDesc02}
 			/>
 			<LiItem
+				key={props.id03}
 				liTitle={props.liTitle03}
 				liDesc={props.liDesc03}
 			/>

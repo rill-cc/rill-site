@@ -1,7 +1,7 @@
 import { Layout } from './Layout'
 import { Heading } from './Heading'
 import { Section } from './Section'
-import * as C from './Content'
+import * as C from './content'
 
 import Intro from './Intro'
 import For from './For'

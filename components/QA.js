@@ -5,28 +5,20 @@ import { C, Section } from './bridge'
 import { QAItem } from './QAEls'
 
 const QA = props => {
-	const [open, setOpen] = useState(false)
-	const [height, setHeight] = useState(false)
-	const ref = useRef(null)
-	
-	const toggleSection = () => {
-		setOpen(!open)
-		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
-	}
-	useEffect(toggleSection, [ref])
+
+	const QAItemList = C.QA.map(item =>
+		<QAItem
+			key={item.id}
+			title={item.title}
+			desc={item.desc}
+		/>
+	)
 
 	return (
 		<Section heading='Q&A'>
 			<Flex gridColumn='1/7'>
 
-				<QAItem
-					onChange={toggleSection}
-					isOpen={open}
-					maxHeight={height}
-					title='title'
-					desc='title'
-					ref={ref}
-				/>
+				{QAItemList}
 				
 			</Flex>
 			
