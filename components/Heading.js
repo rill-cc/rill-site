@@ -1,5 +1,5 @@
 import { Flex, Text } from './system'
-import { ButtonReveal } from './ButtonReveal'
+import { IconReveal } from './IconReveal'
 
 export const Heading = props =>
 	<Text
@@ -11,10 +11,10 @@ export const Heading = props =>
 		px={4}
 		sx={{
 			position: 'relative',
-			borderBottom: '1px solid',
+			borderBottom: `${props.isOpen ? null : '1px solid'}`,
 			borderColor: 'blacks.0',
 		}}
 	>
 		{props.children}
-		<ButtonReveal isOpen={props.isOpen} />
+		<IconReveal isOpen={props.isOpen} />
 	</Text>

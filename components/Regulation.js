@@ -1,31 +1,60 @@
-import { Flex, Grid, Text, Image } from './system'
-import { C, Section } from './bridge'
-import { RowItem } from './RegulationEls'
+import { Flex, Grid, Text } from './system'
+import { C, Section, Layout } from './bridge'
+import { LiItem } from './RegulationEls'
 
 const Regulation = props => {
 
 	const RowItemList = C.Regulation.map(item =>
-		<RowItem
+		<Layout
 			key={item.id}
-			rowTitle={item.rowTitle}
-			rowDesc={item.rowDesc}
-			liTitle01={item.children[0].liTitle}
-			liDesc01={item.children[0].liDesc}
-			id01={item.children[0].id}
-			liTitle02={item.children[1].liTitle}
-			liDesc02={item.children[1].liDesc}
-			id02={item.children[1].id}
-			liTitle03={item.children[2].liTitle}
-			liDesc03={item.children[2].liDesc}
-			id03={item.children[2].id}
-		/>
+			gridColumn='1/-1'
+		>
+			<Grid
+				gridColumn='1/7'
+				p={3}
+				sx={{
+					borderBottom: '1px solid',
+					borderRight: '1px solid',
+					borderColor: 'blacks.0',
+				}}
+				gridTemplateColumns='repeat(6, 1fr)'
+			>
+				<Text
+					variant='s3'
+					pb={2}
+					gridColumn='1/4'
+				>
+					{item.rowTitle}
+				</Text>
+				<Text
+					variant='s3'
+					gridColumn='1/4'
+					color='blacks.3' alignSelf='end'
+				>
+					{item.rowDesc}
+				</Text>
+				
+			</Grid>
+
+			<Flex as='ul'
+				flexes='rss'
+				gridColumn='7/-1'
+				height='100%'
+			>
+				{item.children.map(point =>
+					<LiItem
+						key={point.id}
+						liTitle={point.liTitle}
+						liDesc={point.liDesc}
+					/>
+					)}
+			</Flex>
+		</Layout>
 	)
 
 	return (
 	<Section heading='Content Regulation'>
-
-			{RowItemList}
-
+		{RowItemList}
 	</Section>
 	)
 }

@@ -9,6 +9,7 @@ import {
   Utilities,
   Regulation,
   QA,
+  Stages,
 } from '../components/bridge'
 
 import HelperGrid from '../components/utils'
@@ -22,6 +23,7 @@ const App = props =>
     <Utilities />
     <Regulation />
     <QA />
+    <Stages />
   </Theme>
 
 export default App

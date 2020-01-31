@@ -6,7 +6,7 @@ import { C } from './bridge'
 const LiItem = props =>
 	<Flex
 		width={1/4}
-		flexes='css'
+		flexes='cbs'
 		p={4}
 		sx={{
 			borderBottom: '1px solid',
@@ -22,7 +22,7 @@ const LiItem = props =>
 
 const List = ({items}) => items.map(item =>
 	<LiItem key={item.id}>
-		<Text variant='s3' pb={8}>{item.title}</Text>
+		<Text variant='s3' pb={9}>{item.title}</Text>
 		<Text variant='s3' color='blacks.3'>{item.desc}</Text>
 	</LiItem>
 	)

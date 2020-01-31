@@ -12,14 +12,16 @@ breakpoints.xlg	= breakpoints[4] // 1440+
 
 const space = [
 	0,
-	'0.5rem',	// 1
-	'1rem',		// 2
-	'1.5rem',	// 3
-	'2rem',		// 4
-	'3rem',		// 5
-	'4rem',		// 6
-	'5rem',		// 7
-	'7rem',		// 8
+	'0.5rem',	// 1: 8px
+	'1rem',		// 2: 16px
+	'1.5rem',	// 3: 24px
+	'2rem',		// 4: 32px
+	'3rem',		// 5: 48px
+	'4rem',		// 6: 64px
+	'5rem',		// 7: 80px
+	'6rem',		// 8: 96px
+	'7rem',		// 9: 112px
+	'8rem',		// 10: 128px
 ]
 
 const colors = {
@@ -30,6 +32,7 @@ const colors = {
 		'rgba(0,0,0,.16)',
 		'rgba(0,0,0,.32)',
 		'rgba(0,0,0,.56)',
+		'rgba(0,0,0,.80)',
 		],
 	white: '#FFF',
 	whites: [

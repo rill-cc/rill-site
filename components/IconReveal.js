@@ -1,6 +1,6 @@
 import { Flex } from './system'
 
-export const ButtonReveal = props =>
+export const IconReveal = props =>
 <Flex as='span'
 	sx={{
 		position: 'absolute',

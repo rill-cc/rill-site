@@ -4,6 +4,7 @@ import { How } from './content/how'
 import { Utilities } from './content/utilities'
 import { Regulation } from './content/regulation'
 import { QA } from './content/qa'
+import { Stages } from './content/stages'
 
 export {
 	Intro,
@@ -12,4 +13,5 @@ export {
 	Utilities,
 	Regulation,
 	QA,
+	Stages,
 }
