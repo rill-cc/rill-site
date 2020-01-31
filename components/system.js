@@ -30,14 +30,37 @@ export const Button = forwardRef((props, ref) =>
       display: 'inline-block',
       textAlign: 'center',
       lineHeight: 'inherit',
+      textTransform: 'uppercase',
       textDecoration: 'none',
       fontSize: 'inherit',
-      px: 3,
-      py: 2,
-      color: 'white',
-      bg: 'primary',
+      p: 3,
+      color: 'black',
+      bg: 'accent',
       border: 0,
       borderRadius: 0,
+    }}
+  />
+)
+
+export const Input = forwardRef((props, ref) =>
+  <Box
+    ref={ref}
+    as='input'
+    type='text'
+    tx='forms'
+    variant='input'
+    {...props}
+    __css={{
+      display: 'block',
+      // width: '100%',
+      p: 3,
+      appearance: 'none',
+      fontSize: 'inherit',
+      lineHeight: 'inherit',
+      textTransform: 'uppercase',
+      borderRadius: '0',
+      color: 'inherit',
+      bg: 'transparent',
     }}
   />
 )

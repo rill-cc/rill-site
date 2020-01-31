@@ -1,4 +1,5 @@
 import { Layout } from './Layout'
+import { Signup } from './Signup'
 import { Heading } from './Heading'
 import { Section } from './Section'
 import * as C from './content'
@@ -18,6 +19,7 @@ import QA from './QA'
 
 export {
 	C,
+	Signup,
 	Layout,	
 	Heading,
 	Section,

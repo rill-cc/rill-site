@@ -12,14 +12,14 @@ const For = props => {
 		<Layout>
 
 			<Grid
-				gridColumn='1/5'
+				gridColumn='1/4'
 				py={6}
 				px={4}
 			>
 				<Text variant='s1' styling='caps'>For</Text>
 			</Grid>
 
-			<Grid gridColumn='5/12'>
+			<Grid gridColumn='4/10'>
 				<Flex flexes='rbc'>
 					<Tab handleTabs={handleTabs} state={activeTab} name='Researcher' />
 					<Tab handleTabs={handleTabs} state={activeTab} name='Activist' />

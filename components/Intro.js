@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text, Image } from './system'
-import { Layout } from './bridge'
+import { Flex, Grid, Text, Image, Input, Button } from './system'
+import { Layout, Signup } from './bridge'
 
 const Intro = props => {
 
@@ -43,25 +43,26 @@ useEffect(handleVideoHeight, [ref])
 			<Image src='/images/video.png' alt='platform'/>
 			</Grid>
 
-			<Grid
+			<Flex
 				gridColumn='1/7'
 				gridRow='2'
-				flexes='csc'
 				bg='accent'
+				width='100%'
+				flexes='cbs'
 				p={3}
 			>
-				<Flex
-					p={3}
-					width='-webkit-fill-available'
-					height='fit-content'
-					sx={{
-						border: '1px solid',
-						borderColor: 'blacks.1',
-						}}
-				>
-					<Text variant='s3' styling='caps' color='blacks.3'>Your email</Text>
-				</Flex>
-			</Grid>
+					<Flex
+						flexGrow='1'
+						flexes='ccc'
+						width='100%'
+					>
+						<Signup />
+					</Flex>
+					<Text variant='s4' color='blacks.3' width='100%'>
+						Updates about RILL project only.
+					</Text>
+
+			</Flex>
 
 			<Grid
 				gridColumn='7/-1'
@@ -72,7 +73,8 @@ useEffect(handleVideoHeight, [ref])
 				height={height}
 			>
 				<Text variant='s4' color='whites.2'>
-				Platform overview: 1) Selecting node, 2) Finding connections, 3) Creating new node.</Text>	
+					Platform overview: 1) Selecting node, 2) Finding connections, 3) Creating new node.
+				</Text>
 			</Grid>
 
 		</Layout>
