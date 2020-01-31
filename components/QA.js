@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text, Image } from './system'
+import { Flex, Grid, Text, Image, Button } from './system'
 import { C, Section } from './bridge'
 
 import { QAItem } from './QAEls'
@@ -22,10 +22,15 @@ const QA = props => {
 				
 			</Flex>
 			
-			<Flex gridColumn='7/-1' bg='accent' flexes='css'>
+			<Flex
+				gridColumn='7/-1'
+				bg='accent'
+				flexes='ccc'
+			>
 				<Flex
 					p={3}
 					width='100%'
+					height='50%'
 					sx={{
 						borderBottom: '1px solid',
 						borderColor: 'blacks.0',
@@ -33,23 +38,23 @@ const QA = props => {
 				>
 					<Text variant='s2'>Have a question?</Text>
 				</Flex>
+
 				<Flex
-					p={3}
+					bg='accent'
 					width='100%'
+					height='50%'
+					p={3}
 				>
 					<Flex
-						p={3}
-						width='-webkit-fill-available'
-						height='fit-content'
-						sx={{
-							border: '1px solid',
-							borderColor: 'blacks.1',
-							}}
+						flexes='ccc'
+						width='100%'
 					>
-						<Text variant='s3' styling='caps' color='blacks.3'>Your email</Text>
+						<Button bg='black' color='accent' width='100%'>Contact</Button>
 					</Flex>
-				</Flex>
-				</Flex>
+
+			</Flex>
+
+			</Flex>
 		</Section>
 		)
 }
