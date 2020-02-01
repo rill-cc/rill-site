@@ -11,7 +11,7 @@ import Utilities from './Utilities'
 import Regulation from './Regulation'
 import QA from './QA'
 import Stages from './Stages'
-// import Requests from './Requests'
+import Requests from './Requests'
 // import Outro from './Outro'
 // import Contributors from './Contributors'
 // import Footer from './Footer'	
@@ -30,4 +30,5 @@ export {
 	Regulation,
 	QA,
 	Stages,
+	Requests,
 }

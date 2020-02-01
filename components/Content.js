@@ -5,6 +5,7 @@ import { Utilities } from './content/utilities'
 import { Regulation } from './content/regulation'
 import { QA } from './content/qa'
 import { Stages } from './content/stages'
+import { Requests } from './content/requests'
 
 export {
 	Intro,
@@ -14,4 +15,5 @@ export {
 	Regulation,
 	QA,
 	Stages,
+	Requests,
 }
