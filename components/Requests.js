@@ -40,7 +40,7 @@ const Requests = props => {
 					borderColor: 'blacks.0',
 				}}
 			>
-				<Text variant='s2'>desc</Text>
+				<Text variant='s2'>{C.Requests.desc}</Text>
 			</Flex>
 			
 			<Flex as='ul'

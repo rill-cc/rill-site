@@ -1,5 +1,5 @@
 export const Requests = {
-	desc: '',
+	desc: 'The platform is open to everyone. Depending on the background, everyone gets an access to relevant functionality.',
 	requests: [
 	{
 		id: '1',
