@@ -19,9 +19,11 @@ const Regulation = props => {
 				}}
 				gridTemplateColumns='repeat(6, 1fr)'
 			>
+			<Flex
+				gridColumn='1/4' flexes='css'
+			>
 				<Text
 					variant='s3'
-					gridColumn='1/4'
 					pb={2}
 					pl={4}
 				>
@@ -29,12 +31,12 @@ const Regulation = props => {
 				</Text>
 				<Text
 					variant='s3'
-					color='blacks.3' alignSelf='end'
-					gridColumn='1/4'
+					color='blacks.3'
 					pl={4}
 				>
 					{item.rowDesc}
 				</Text>
+			</Flex>
 				
 			</Grid>
 

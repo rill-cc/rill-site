@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { Flex, Grid, Text, Link } from './system'
 import { C, Section } from './bridge'
+import { IconExtLink } from './IconExtLink'
 
 const Requests = props => {
 
@@ -8,7 +9,7 @@ const Requests = props => {
 		<Grid as='li'
 			key={item.id}
 			gridTemplateColumns='repeat(6, 1fr)'
-			p={4}
+			py={4}
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
@@ -17,6 +18,7 @@ const Requests = props => {
 		>
 			<Text
 				gridColumn='1/5'
+				pl={4}
 			>
 				{item.title}
 			</Text>
@@ -24,8 +26,10 @@ const Requests = props => {
 				color='blacks.3'
 				gridColumn='5/-1'
 				src={item.url}
+				sx= {{ position: 'relative' }}
 			>
 				{item.linkTitle}
+				<IconExtLink />
 			</Link>
 		</Grid>
 		)
