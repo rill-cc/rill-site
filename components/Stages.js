@@ -10,17 +10,26 @@ const Stages = props => {
 			<Grid
 				gridColumn='1/7'
 				flexes='css'
+				py={4}
 				sx={{
 					borderBottom: '1px solid',
 					borderColor: 'blacks.0',
 				}}
 				gridTemplateColumns='repeat(6, 1fr)'
 			>
-				<Flex gridColumn='1/4' p={4}>
-					<Text variant='s3' pb={2}>
+				<Flex gridColumn='1/4' flexes='css'>
+					<Text
+						variant='s3'
+						pb={2}
+						pl={4}
+					>
 						{item.title}
 					</Text>
-					<Text variant='s3' color='blacks.3'>
+					<Text
+						variant='s3'
+						color='blacks.3'
+						pl={4}
+					>
 						{item.desc}
 					</Text>
 				</Flex>

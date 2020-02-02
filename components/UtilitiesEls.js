@@ -12,29 +12,31 @@ export const LiItem = props =>
 		}}
 		gridTemplateColumns='repeat(6, 1fr)'
 	>
-		<Text as='h3'
-			variant='s3'
-			gridColumn='1/-1'
-			pl={4}
-			sx={{ display: 'flex' }}
-			flexes='rss'
+		<Flex
+			gridColumn='1/4' flexes='css'
 		>
-			{props.icon === '1' && <Pict01 />}
-			{props.icon === '2' && <Pict02 />}
-			{props.icon === '3' && <Pict03 />}
-			
-			{props.title}
-			
-		</Text>
-		<Text
-			variant='s3'
-			color='blacks.3'
-			alignSelf='end'
-			gridColumn='1/5'
-			pl={4}
-		>
-			{props.desc}
-		</Text>
+			<Text as='h3'
+				variant='s3'
+				pb={2}
+				pl={4}
+				sx={{ display: 'flex' }}
+				flexes='rss'
+			>
+				{props.icon === '1' && <Pict01 />}
+				{props.icon === '2' && <Pict02 />}
+				{props.icon === '3' && <Pict03 />}
+				
+				{props.title}
+				
+			</Text>
+			<Text
+				variant='s3'
+				color='blacks.3'
+				pl={4}
+			>
+				{props.desc}
+			</Text>
+		</Flex>
 	</Grid>
 
 	LiItem.defaultProps = {

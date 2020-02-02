@@ -13,6 +13,7 @@ export const Heading = props =>
 			position: 'relative',
 			borderBottom: `${props.isOpen ? null : '1px solid'}`,
 			borderColor: 'blacks.0',
+			cursor: 'row-resize',
 		}}
 	>
 		{props.children}
