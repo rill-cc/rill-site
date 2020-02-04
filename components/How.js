@@ -1,9 +1,15 @@
 import { useRef, useState } from 'react'
-import { Flex, Text } from './system'
+import { Flex, Text, Link } from './system'
 import { C, Section } from './bridge'
-import { Fig01 } from './Figures.js'
+import { Fig01, Fig02 } from './Figures.js'
+import { Tab } from './HowEls.js'
 
-const Utilities = props =>
+
+const Utilities = props => {
+	const [activeTab, setActiveTab] = useState('Fig1')
+	const handleTabs = (e) => setActiveTab(e.target.name)
+	
+	return (
 	<Section heading='How'>
 
 		<Flex as='ul'
@@ -24,13 +30,40 @@ const Utilities = props =>
 
 		<Flex as='aside'
 			gridColumn='7/-1'
+			height='800px'
 			flexes='ccc'
 			bg='accent'
-			height='800px'
 		>
-			<Fig01 />
+			<Flex flexes='ccc' flexGrow='1' width='100%'>
+				{activeTab === 'Fig1' && <Fig01 />}
+				{activeTab === 'Fig2' && <Fig02 />}
+			</Flex>
+			
+			<Flex
+				flexes='css'
+				width='100%'
+				p={4}
+			>
+				<Tab
+					name='Fig1'
+					activeTab={activeTab}
+					onChange={handleTabs}
+					mb={1}
+				>
+					{C.How.figs[0].id}: {C.How.figs[0].desc}
+				</Tab>
+				<Tab
+					name='Fig2'
+					activeTab={activeTab}
+					onChange={handleTabs}
+				>
+					{C.How.figs[1].id}: {C.How.figs[1].desc}
+				</Tab>
+			</Flex>
 		</Flex>
 
 	</Section>
+	)
+}
 
 export default Utilities

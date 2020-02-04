@@ -7,12 +7,12 @@ const Outro = props => {
 const ref = useRef(null)
 const [height, setHeight] = useState(null)
 
-const handleVideoHeight = () => {
+const handleContainerHeight = () => {
 	const refBounds = ref.current.getBoundingClientRect()
 	setHeight(refBounds.width / 2)
 }
 
-useEffect(handleVideoHeight, [ref])
+useEffect(handleContainerHeight, [ref])
 
 	return (
 		<Layout>

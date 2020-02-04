@@ -91,3 +91,87 @@ export const Fig01 = () =>
 			stroke="black"
 		/>
 	</svg>
+
+export const Fig02 = () =>
+	<svg
+		width="160"
+		height="96"
+		viewBox="0 0 160 96"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path d="M96 48L120.5 7.5" stroke="black" />
+		<path d="M96.5 48H7.5V8H72" stroke="black" />
+		<path d="M96 48L120.5 88.5H152" stroke="black" />
+		<path d="M40 48V88.5" stroke="black" />
+		<rect
+			x="88.5"
+			y="40.5"
+			width="15"
+			height="15"
+			fill="white"
+			stroke="black"
+		/>
+		<rect
+			x="64.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<path d="M32.5 0.5H47.5V15.5H32.5V0.5Z" fill="#F7FAFF" stroke="black" />
+		<path
+			d="M32.5 40.5H47.5V55.5H32.5V40.5Z"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="0.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="0.5"
+			y="40.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="112.5"
+			y="0.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="32.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="112.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+		<rect
+			x="144.5"
+			y="80.5"
+			width="15"
+			height="15"
+			fill="#F7FAFF"
+			stroke="black"
+		/>
+	</svg>
