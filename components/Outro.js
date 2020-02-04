@@ -72,7 +72,7 @@ useEffect(handleContainerHeight, [ref])
 				bg='black'
 				p={3}
 				flexes='cbs'
-				height={height}
+				height={height / 2}
 			>
 				<Flex flexes='ccc' width='100%' flexGrow='1'>
 					<Button bg='accent' color='black' width='100%'>Contact</Button>

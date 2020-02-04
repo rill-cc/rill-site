@@ -9,6 +9,6 @@ export const Signup = props =>
       borderColor: 'blacks.1',
 		}}
 	>
-		<Input width='80%' placeholder='Enter email' />
-		<Button width='20%'>Sign up</Button>
+		<Input flexGrow='1' placeholder='Enter email' />
+		<Button width='fit-content' px={3}>Sign up</Button>
 	</Flex>
