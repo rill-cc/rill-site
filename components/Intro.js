@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text, Image, Input, Button } from './system'
+import { Flex, Text, Image, Input, Button } from './system'
 import { Layout, Signup } from './bridge'
 
 const Intro = props => {
@@ -17,7 +17,7 @@ useEffect(handleVideoHeight, [ref])
 	return (
 		<Layout>
 
-			<Grid
+			<Flex
 				gridColumn='1/7'
 				bg='accent'
 				sx={{
@@ -29,9 +29,9 @@ useEffect(handleVideoHeight, [ref])
 					<Text variant='s1' styling='caps'>RILL.</Text>
 					<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
 				</Flex>
-			</Grid>
+			</Flex>
 
-			<Grid
+			<Flex
 				ref={ref}
 				gridColumn='7/-1'
 				bg='black'
@@ -41,7 +41,7 @@ useEffect(handleVideoHeight, [ref])
 				}}
 			>
 			<Image src='/images/video.png' alt='platform'/>
-			</Grid>
+			</Flex>
 
 			<Flex
 				gridColumn='1/7'
@@ -64,18 +64,18 @@ useEffect(handleVideoHeight, [ref])
 
 			</Flex>
 
-			<Grid
+			<Flex
 				gridColumn='7/-1'
 				gridRow='2'
 				bg='black'
 				p={3}
-				flexes='cse'
+				flexes='ces'
 				height={height}
 			>
 				<Text variant='s4' color='whites.2'>
 					Platform overview: 1) Selecting node, 2) Finding connections, 3) Creating new node.
 				</Text>
-			</Grid>
+			</Flex>
 
 		</Layout>
 	)

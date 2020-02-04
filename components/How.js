@@ -1,17 +1,16 @@
 import { useRef, useState } from 'react'
-import { Flex, Grid, Text } from './system'
+import { Flex, Text } from './system'
 import { C, Section } from './bridge'
-
 import { Fig01 } from './Figures.js'
 
 const Utilities = props =>
 	<Section heading='How'>
 
-		<Grid as='ul'
+		<Flex as='ul'
 			gridColumn='1/7'
 			py={6}
 			px={4}
-			gridTemplateRows='max-content'
+			flexes='css'
 		>
 			<Text as='li' variant='s2' pb={3}>
 				{C.How.steps[0].id}<br/>
@@ -21,16 +20,16 @@ const Utilities = props =>
 				{C.How.steps[1].id}<br/>
 				{C.How.steps[1].desc}
 			</Text>
-		</Grid>
+		</Flex>
 
-		<Grid as='aside'
+		<Flex as='aside'
 			gridColumn='7/-1'
 			flexes='ccc'
 			bg='accent'
 			height='800px'
 		>
 			<Fig01 />
-		</Grid>
+		</Flex>
 
 	</Section>
 

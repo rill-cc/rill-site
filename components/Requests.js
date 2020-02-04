@@ -8,13 +8,13 @@ const Requests = props => {
 	const RequestItemList = C.Requests.requests.map(item =>
 		<Grid as='li'
 			key={item.id}
-			gridTemplateColumns='repeat(6, 1fr)'
+			width='100%'
 			py={4}
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
 			}}
-			width='100%'
+			gridTemplateColumns='repeat(6, 1fr)'
 		>
 			<Text
 				gridColumn='1/5'

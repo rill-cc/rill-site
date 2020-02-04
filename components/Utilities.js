@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Flex, Grid, Text, Image } from './system'
+import { Flex, Image } from './system'
 import { C, Section } from './bridge'
 import { LiItem } from './UtilitiesEls'
 

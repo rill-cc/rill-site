@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text, Image, Button } from './system'
+import { Flex, Text, Image, Button } from './system'
 import { C, Section } from './bridge'
 
 import { QAItem } from './QAEls'
@@ -16,10 +16,10 @@ const QA = props => {
 
 	return (
 		<Section heading='Q&A'>
-			<Flex gridColumn='1/7'>
-
+			<Flex
+				gridColumn='1/7'
+			>
 				{QAItemList}
-				
 			</Flex>
 			
 			<Flex

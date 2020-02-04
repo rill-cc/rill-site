@@ -13,7 +13,8 @@ export const LiItem = props =>
 		gridTemplateColumns='repeat(6, 1fr)'
 	>
 		<Flex
-			gridColumn='1/4' flexes='css'
+			gridColumn='1/4'
+			flexes='css'
 		>
 			<Text as='h3'
 				variant='s3'

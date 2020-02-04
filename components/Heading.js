@@ -1,4 +1,4 @@
-import { Flex, Text } from './system'
+import { Text } from './system'
 import { IconReveal } from './IconReveal'
 
 export const Heading = props =>

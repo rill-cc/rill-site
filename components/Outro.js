@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { Flex, Grid, Text, Image, Input, Button } from './system'
+import { Flex, Text, Image, Input, Button } from './system'
 import { Layout, Signup } from './bridge'
 
 const Outro = props => {
@@ -9,56 +9,42 @@ const [height, setHeight] = useState(null)
 
 const handleVideoHeight = () => {
 	const refBounds = ref.current.getBoundingClientRect()
-	setHeight(refBounds.height)
+	setHeight(refBounds.width / 2)
 }
 
 useEffect(handleVideoHeight, [ref])
 
 	return (
 		<Layout>
-
-			<Grid
+			<Text
 				gridColumn='1/7'
 				bg='accent'
+				p={4}
+				flexes='css'
+				variant='s1'
 				sx={{
 					borderBottom: '1px solid',
 					borderColor: 'blacks.0',
 				}}
 			>
-				<Flex flexes='css' p={4}>
-					<Text variant='s1'>
-						If you find the project interesting, you can follow updates by subscribing to newsletter.
-					</Text>
-				</Flex>
-			</Grid>
+				If you find the project interesting, you can follow updates by subscribing to newsletter.
+			</Text>
 
-			<Grid
-				
+			<Text
 				gridColumn='7/-1'
 				bg='black'
 				p={4}
+				ref={ref}
+				height={height}
+				variant='s1'
+				color='accent'
 				sx={{
 					borderBottom: '1px solid',
-					borderColor: 'whites.0',
-					position: 'relative',
-					height: '0',
-					overflow: 'hidden',
-					pt: '56.25%',
-				}}
-			>
-			<Text ref={ref} variant='s1' color='accent'
-				sx={{
-					width: '100%',
-					position: 'absolute',
-					height: '100%',
-					width: '100%',
-					top: 0,
-					left: 0,
+					borderColor: 'whites.0'
 				}}
 			>
 				Have a question?
 			</Text>
-			</Grid>
 
 			<Flex
 				gridColumn='1/7'
@@ -68,29 +54,33 @@ useEffect(handleVideoHeight, [ref])
 				flexes='cbs'
 				p={3}
 			>
-					<Flex
-						flexGrow='1'
-						flexes='ccc'
-						width='100%'
-					>
-						<Signup />
-					</Flex>
-					<Text variant='s4' color='blacks.3' width='100%'>
-						Updates about RILL project only.
-					</Text>
-
+				<Flex
+					flexGrow='1'
+					flexes='ccc'
+					width='100%'
+				>
+					<Signup />
+				</Flex>
+				<Text variant='s4' color='blacks.3' width='100%'>
+					Updates about RILL project only.
+				</Text>
 			</Flex>
 
-			<Grid
+			<Flex
 				gridColumn='7/-1'
 				gridRow='2'
 				bg='black'
 				p={3}
-				flexes='cse'
+				flexes='cbs'
 				height={height}
 			>
-			yo
-			</Grid>
+				<Flex flexes='ccc' width='100%' flexGrow='1'>
+					<Button bg='accent' color='black' width='100%'>Contact</Button>
+				</Flex>
+				<Flex>
+					<Text variant='s4' color='blacks.3'> </Text>
+				</Flex>
+			</Flex>
 
 		</Layout>
 	)

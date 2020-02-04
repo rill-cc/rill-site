@@ -20,7 +20,8 @@ const Regulation = props => {
 				gridTemplateColumns='repeat(6, 1fr)'
 			>
 			<Flex
-				gridColumn='1/4' flexes='css'
+				gridColumn='1/4'
+				flexes='css'
 			>
 				<Text
 					variant='s3'

@@ -17,7 +17,10 @@ const Stages = props => {
 				}}
 				gridTemplateColumns='repeat(6, 1fr)'
 			>
-				<Flex gridColumn='1/4' flexes='css'>
+				<Flex
+					gridColumn='1/4'
+					flexes='css'
+				>
 					<Text
 						variant='s3'
 						pb={2}
