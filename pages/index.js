@@ -12,6 +12,7 @@ import {
   Stages,
   Requests,
   Outro,
+  Footer,
 } from '../components/bridge'
 
 import HelperGrid from '../components/utils'
@@ -28,6 +29,7 @@ const App = props =>
     <Stages />
     <Requests />
     <Outro />
+    <Footer />
   </Theme>
 
 export default App

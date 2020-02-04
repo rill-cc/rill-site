@@ -51,18 +51,22 @@ const text = {
 	s1: {
 		fontSize: '2rem',
 		lineHeight: 1.25,
+		color: 'blacks.4',
 	},
 	s2: {
 		fontSize: '1.5rem',
 		lineHeight: 1.25,
+		color: 'blacks.4',
 	},
 	s3: {
 		fontSize: '1rem',
 		lineHeight: 1.25,
+		color: 'blacks.4',
 	},
 	s4: {
 		fontSize: '.75rem',
 		lineHeight: 1.25,
+		color: 'blacks.4',
 	},
 }
 

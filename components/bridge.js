@@ -14,7 +14,7 @@ import Stages from './Stages'
 import Requests from './Requests'
 import Outro from './Outro'
 // import Contributors from './Contributors'
-// import Footer from './Footer'	
+import Footer from './Footer'	
 
 
 export {
@@ -32,4 +32,5 @@ export {
 	Stages,
 	Requests,
 	Outro,
+	Footer,
 }
