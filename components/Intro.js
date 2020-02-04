@@ -4,15 +4,14 @@ import { Layout, Signup } from './bridge'
 
 const Intro = props => {
 
-const ref = useRef(null)
-const [height, setHeight] = useState(null)
+	const ref = useRef(null)
+	const [height, setHeight] = useState(null)
 
-const handleContainerHeight = () => {
-	const refBounds = ref.current.getBoundingClientRect()
-	setHeight(refBounds.height / 2)
-}
-
-useEffect(handleContainerHeight, [ref])
+	const handleContainerHeight = () => {
+		const refBounds = ref.current.getBoundingClientRect()
+		setHeight(refBounds.height / 2)
+	}
+	useEffect(handleContainerHeight, [ref])
 
 	return (
 		<Layout>
@@ -25,7 +24,10 @@ useEffect(handleContainerHeight, [ref])
 					borderColor: 'blacks.0',
 				}}
 			>
-				<Flex flexes='css' p={4}>
+				<Flex
+					flexes='css'
+					p={4}
+				>
 					<Text variant='s1' styling='caps'>RILL.</Text>
 					<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
 				</Flex>

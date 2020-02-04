@@ -3,12 +3,11 @@ import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
 
-const breakpoints = [0, '40em', '64em', '80em', '90em', '100em']
-breakpoints.all	= breakpoints[0]
-breakpoints.sm	= breakpoints[1] // 640
-breakpoints.md	= breakpoints[2] // 1024
-breakpoints.lg	= breakpoints[3] // 1280
-breakpoints.xlg	= breakpoints[4] // 1440+
+const breakpoints = ['40em', '64em', '80em', '90em', '100em']
+breakpoints.sm	= breakpoints[0] // 640-1023
+breakpoints.md	= breakpoints[1] // 1024-1279
+breakpoints.lg	= breakpoints[2] // 1280-1439
+breakpoints.xlg	= breakpoints[3] // 1440+
 
 const space = [
 	0,
