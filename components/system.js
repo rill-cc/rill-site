@@ -52,7 +52,6 @@ export const Input = forwardRef((props, ref) =>
     {...props}
     __css={{
       display: 'block',
-      // width: '100%',
       p: 3,
       appearance: 'none',
       fontSize: 'inherit',

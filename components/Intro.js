@@ -37,6 +37,7 @@ const Intro = props => {
 				ref={ref}
 				gridColumn='7/-1'
 				bg='black'
+				height='fit-content'
 				sx={{
 					borderBottom: '1px solid',
 					borderColor: 'whites.0',
