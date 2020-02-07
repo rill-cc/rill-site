@@ -4,6 +4,7 @@ export const Signup = props =>
 	<Flex
 		width='100%'
 		flexes='rcc'
+		variant='text.s2'
 		sx={{
 			border: '1px solid',
       borderColor: 'blacks.1',

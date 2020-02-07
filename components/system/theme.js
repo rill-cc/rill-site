@@ -3,11 +3,12 @@ import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
 
-const breakpoints = ['40em', '64em', '80em', '90em', '100em']
-breakpoints.sm	= breakpoints[0] // 640-1023
-breakpoints.md	= breakpoints[1] // 1024-1279
-breakpoints.lg	= breakpoints[2] // 1280-1439
-breakpoints.xlg	= breakpoints[3] // 1440+
+const breakpoints = ['24rem', '48em', '64em', '80em', '100em']
+breakpoints.xsm	= breakpoints[0] // 2: 384-767
+breakpoints.sm	= breakpoints[1] // 3: 768-1023
+breakpoints.md	= breakpoints[2] // 4: 1024-1439
+breakpoints.lg	= breakpoints[3] // 5: 1440-1599
+breakpoints.xlg	= breakpoints[3] // 6: 1660+
 
 const space = [
 	0,
@@ -42,29 +43,29 @@ const colors = {
 	accent: '#F7FAFF',
 }
 
-const fonts = {
-	sans: 'Helvetica Neue, Sans-Serif',
-}
+const fonts = 'Helvetica Neue, -system, Sans-Serif'
+const fontSizes = ['.75rem', '1rem', '1.5rem', '2rem']
+const lineHeights = '1.25'
 
 const text = {
 	s1: {
-		fontSize: '2rem',
-		lineHeight: 1.25,
+		fontSize: [2, null, null, 3],
+		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 	s2: {
-		fontSize: '1.5rem',
-		lineHeight: 1.25,
+		fontSize: [1, null, null, 2],
+		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 	s3: {
-		fontSize: '1rem',
-		lineHeight: 1.25,
+		fontSize: 1,
+		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 	s4: {
-		fontSize: '.75rem',
-		lineHeight: 1.25,
+		fontSize: 0,
+		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 }
@@ -89,6 +90,8 @@ const theme = {
 	space,
 	colors,
 	fonts,
+	fontSizes,
+	lineHeights,
 	text,
 	variants,
 	flexes,
@@ -107,7 +110,7 @@ const Global = injectGlobal`
 	  -moz-osx-font-smoothing: grayscale;
 	  font-size: 16px;
 	  font-weight: normal;
-	  font-family: ${fonts.sans};
+	  font-family: ${fonts};
 	  -webkit-text-size-adjust: 100%;
 	}
 

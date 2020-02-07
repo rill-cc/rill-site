@@ -21,6 +21,7 @@ const Intro = props =>
 			</Flex>
 		</Flex>
 
+<<<<<<< HEAD
 		<Flex
 			gridColumn='7/-1'
 			bg='black'
@@ -31,6 +32,20 @@ const Intro = props =>
 		>
 		<Image src='/images/video.png' alt='platform'/>
 		</Flex>
+=======
+			<Flex
+				ref={ref}
+				gridColumn='7/-1'
+				bg='black'
+				height='fit-content'
+				sx={{
+					borderBottom: '1px solid',
+					borderColor: 'whites.0',
+				}}
+			>
+			<Image src='/images/video.png' alt='platform'/>
+			</Flex>
+>>>>>>> b707c2399db4fb50e4cab44fb63e524a47c6bd4a
 
 		<Flex
 			gridColumn='1/7'
