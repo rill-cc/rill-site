@@ -10,7 +10,15 @@ export const Section = props => {
 		setOpen(!open)
 		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
 	}
-	useEffect(toggleSection, [ref])
+	useEffect(() => {
+		window.addEventListener('onLoad', toggleSection)
+		window.addEventListener('onResize', toggleSection)
+
+		return (() => {
+			window.removeEventListener('onLoad', toggleSection)
+			window.removeEventListener('onResize', toggleSection)
+		})
+	}, [ref])
 	
 	return (
 		<>
