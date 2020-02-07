@@ -1,66 +1,85 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { Flex, Text, Link } from './system'
 import { C, Section } from './bridge'
 import { Fig01, Fig02 } from './Figures.js'
 import { Tab } from './HowEls.js'
 
-
 const Utilities = props => {
+	// Switch tabs
 	const [activeTab, setActiveTab] = useState('Fig1')
 	const handleTabs = (e) => setActiveTab(e.target.name)
+
+	const StepList = C.How.steps.map(step =>
+		<Text as='li'
+			key={step.id}
+			variant='s2'
+			pb={3}
+		>
+			{step.id}<br/>
+			{step.desc}
+		</Text>
+		)
 	
 	return (
 	<Section heading='How'>
 
 		<Flex as='ul'
 			gridColumn='1/7'
-			py={6}
-			px={4}
+			p={4}
 			flexes='css'
 		>
-			<Text as='li' variant='s2' pb={3}>
-				{C.How.steps[0].id}<br/>
-				{C.How.steps[0].desc}
-			</Text>
-			<Text as='li' variant='s2'>
-				{C.How.steps[1].id}<br/>
-				{C.How.steps[1].desc}
-			</Text>
+			{StepList}
 		</Flex>
 
 		<Flex as='aside'
 			gridColumn='7/-1'
-			height='800px'
-			flexes='ccc'
+			pb='100%'
 			bg='accent'
+			sx={{ position: 'relative' }}
 		>
-			<Flex flexes='ccc' flexGrow='1' width='100%'>
-				{activeTab === 'Fig1' && <Fig01 />}
-				{activeTab === 'Fig2' && <Fig02 />}
-			</Flex>
-			
 			<Flex
-				flexes='css'
-				width='100%'
-				p={4}
+				flexes='ccc'
+				sx={{
+					position: 'absolute',
+					top: 0,
+					right: 0,
+					bottom: 0,
+					left: 0,
+					p: 'auto',
+				}}
 			>
-				<Tab
-					name='Fig1'
-					activeTab={activeTab}
-					onChange={handleTabs}
-					mb={1}
+				<Flex
+					flexes='ccc'
+					flexGrow='1'
+					width='100%'
 				>
-					{C.How.figs[0].id}: {C.How.figs[0].desc}
-				</Tab>
-				<Tab
-					name='Fig2'
-					activeTab={activeTab}
-					onChange={handleTabs}
+					{activeTab === 'Fig1' && <Fig01 />}
+					{activeTab === 'Fig2' && <Fig02 />}
+				</Flex>
+				
+				<Flex
+					flexes='css'
+					width='100%'
+					p={4}
 				>
-					{C.How.figs[1].id}: {C.How.figs[1].desc}
-				</Tab>
+					<Tab
+						name='Fig1'
+						activeTab={activeTab}
+						onChange={handleTabs}
+						mb={1}
+					>
+						{C.How.figs[0].id}: {C.How.figs[0].desc}
+					</Tab>
+					<Tab
+						name='Fig2'
+						activeTab={activeTab}
+						onChange={handleTabs}
+					>
+						{C.How.figs[1].id}: {C.How.figs[1].desc}
+					</Tab>
+				</Flex>
 			</Flex>
-		</Flex>
+	</Flex>
 
 	</Section>
 	)

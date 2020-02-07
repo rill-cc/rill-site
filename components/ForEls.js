@@ -36,8 +36,13 @@ export const Tab = props =>
 	<Link
 		onClick={props.handleTabs}
 		name={props.name}
-		variant='s1' styling='caps'
+		variant='s1'
+		styling='caps'
 		link={props.state === props.name ? 'underline' : null}
+		mr={[4, null, null, 0]}
+		sx={{
+			':last-child': {mr: 0},
+		}}
 	>
 	{props.name}
 </Link>

@@ -49,19 +49,24 @@ useEffect(handleContainerHeight, [ref])
 			<Flex
 				gridColumn='1/7'
 				gridRow='2'
-				bg='accent'
 				width='100%'
 				flexes='cbs'
-				p={3}
+				px={3}
+				bg='accent'
 			>
 				<Flex
-					flexGrow='1'
-					flexes='ccc'
 					width='100%'
+					pt={9}
+					pb={8}
 				>
 					<Signup />
 				</Flex>
-				<Text variant='s4' color='blacks.3' width='100%'>
+				<Text
+					width='100%'
+					pb={3}
+					variant='s4'
+					color='blacks.3'
+				>
 					Updates about RILL project only.
 				</Text>
 			</Flex>
@@ -69,17 +74,27 @@ useEffect(handleContainerHeight, [ref])
 			<Flex
 				gridColumn='7/-1'
 				gridRow='2'
-				bg='black'
-				p={3}
+				px={3}
 				flexes='cbs'
-				height={height / 2}
+				bg='black'
 			>
-				<Flex flexes='ccc' width='100%' flexGrow='1'>
-					<Button bg='accent' color='black' width='100%'>Contact</Button>
-				</Flex>
-				<Flex>
-					<Text variant='s4' color='blacks.3'> </Text>
-				</Flex>
+				<Button
+					width='100%'
+					mt={9}
+					mb={8}
+					bg='accent'
+					color='black'
+				>
+					Contact
+				</Button>
+
+				<Text
+					pb={3}
+					variant='s4'
+					color='transparent'
+				>
+				&ensp;
+				</Text>
 			</Flex>
 
 		</Layout>
