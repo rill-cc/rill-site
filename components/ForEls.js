@@ -39,17 +39,9 @@ export const Tab = props =>
 		variant='s1'
 		styling='caps'
 		link={props.state === props.name ? 'underline' : null}
-<<<<<<< HEAD
-		mr={[4, null, null, 0]}
+		mr={{all: 4, lg: 0}}
 		sx={{
 			':last-child': {mr: 0},
-=======
-		sx={{
-			mr: [2, null, 4, 0],
-			'last-child': {
-				mr: 0,
-			}
->>>>>>> b707c2399db4fb50e4cab44fb63e524a47c6bd4a
 		}}
 	>
 	{props.name}

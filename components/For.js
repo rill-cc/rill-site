@@ -21,9 +21,8 @@ const For = props => {
 				For
 			</Text>
 			<Flex
-				gridColumn={['4/-1', null, null, '4/10']}
-				flexes={['rsc', null, null, 'rbc']}
-				bg='grey'
+				gridColumn={{all: '4/-1', lg: '4/10'}}
+				flexes={{all: 'rsc', lg: 'rbc'}}
 			>
 				<Tab handleTabs={handleTabs} state={activeTab} name='Researcher' />
 				<Tab handleTabs={handleTabs} state={activeTab} name='Activist' />

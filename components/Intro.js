@@ -21,9 +21,9 @@ const Intro = props =>
 			</Flex>
 		</Flex>
 
-<<<<<<< HEAD
 		<Flex
 			gridColumn='7/-1'
+			height='fit-content'
 			bg='black'
 			sx={{
 				borderBottom: '1px solid',
@@ -32,20 +32,6 @@ const Intro = props =>
 		>
 		<Image src='/images/video.png' alt='platform'/>
 		</Flex>
-=======
-			<Flex
-				ref={ref}
-				gridColumn='7/-1'
-				bg='black'
-				height='fit-content'
-				sx={{
-					borderBottom: '1px solid',
-					borderColor: 'whites.0',
-				}}
-			>
-			<Image src='/images/video.png' alt='platform'/>
-			</Flex>
->>>>>>> b707c2399db4fb50e4cab44fb63e524a47c6bd4a
 
 		<Flex
 			gridColumn='1/7'
@@ -57,8 +43,8 @@ const Intro = props =>
 		>
 				
 			<Signup
-				mt={[8, null, 9]}
-				mb={[7, null, 8]}
+				mt={{all: 8, md: 9}}
+				mb={{all: 7, md: 8}}
 			/>
 
 			<Text
