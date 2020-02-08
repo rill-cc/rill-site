@@ -5,10 +5,10 @@ const Footer = props =>
 	<Layout
 		width='100%'
 		flexes='ccc'
-		py={3}
+		p={3}
 	>
 		<Text
-			gridColumn='5/9'
+			gridColumn={{ min: '1/-1', md: '5/9' }}
 			variant='s4'
 			color='blacks.3'
 			textAlign='center'

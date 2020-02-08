@@ -14,22 +14,33 @@ const Requests = props => {
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
 			}}
-			gridTemplateColumns='repeat(6, 1fr)'
+			gridTemplateColumns={{
+					min: 'repeat(12, 1fr)',
+					sm: 'repeat(6, 1fr)'
+				}}
 		>
 			<Text
-				gridColumn='1/5'
-				pl={4}
+				gridColumn={{ min: '1/7', sm: '1/4' }}
+				pl={{ min: 3, xsm: 4 }}
 			>
 				{item.title}
 			</Text>
 			<Link
-				color='blacks.3'
-				gridColumn='5/-1'
 				src={item.url}
-				sx= {{ position: 'relative' }}
+				gridColumn={{ min: '7/-1', sm: '4/-1' }}
+				pr={{ min: 3, sm: 4 }}
+				textAlign={{ min: 'right', md: 'left' }}
+				color='blacks.3'
+				sx={{ position: 'relative' }}
 			>
 				{item.linkTitle}
-				<IconExtLink />
+				<Flex as='span'
+					sx={{
+						display: ['none', 'none', 'none', 'none', 'flex'],
+					}}
+				>
+					<IconExtLink/>
+				</Flex>
 			</Link>
 		</Grid>
 		)
@@ -37,7 +48,7 @@ const Requests = props => {
 	return (
 		<Section heading='Requests'>
 			<Flex
-				gridColumn='1/7'
+				gridColumn={{ min: '1/-1', sm: '1/7' }}
 				p={4}
 				sx={{
 					borderRight: '1px solid',
@@ -48,7 +59,7 @@ const Requests = props => {
 			</Flex>
 			
 			<Flex as='ul'
-				gridColumn='7/-1'
+				gridColumn={{ min: '1/-1', sm: '7/-1' }}
 			>
 				{RequestItemList}
 			</Flex>

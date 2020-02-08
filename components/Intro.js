@@ -15,7 +15,7 @@ const Intro = props =>
 		>
 			<Flex
 				flexes='css'
-				p={{ min: 3, xsm: 4 }}
+				px={{ min: 3, xsm: 4 }}
 				pb={{min: 8, xsm: 8, sm: 0}}
 			>
 				<Text variant='s1' styling='caps'>RILL.</Text>
