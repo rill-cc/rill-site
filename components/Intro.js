@@ -5,7 +5,8 @@ const Intro = props =>
 	<Layout>
 
 		<Flex
-			gridColumn='1/7'
+			gridColumn={{min: '1/-1', sm: '1/7'}}
+			gridRow='1'
 			bg='accent'
 			sx={{
 				borderBottom: '1px solid',
@@ -14,7 +15,8 @@ const Intro = props =>
 		>
 			<Flex
 				flexes='css'
-				p={4}
+				p={{ min: 3, xsm: 4 }}
+				pb={{min: 8, xsm: 8, sm: 0}}
 			>
 				<Text variant='s1' styling='caps'>RILL.</Text>
 				<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
@@ -22,7 +24,8 @@ const Intro = props =>
 		</Flex>
 
 		<Flex
-			gridColumn='7/-1'
+			gridColumn={{min: '1/-1', sm: '7/-1'}}
+			gridRow={{min: 3, sm: 1}}
 			height='fit-content'
 			bg='black'
 			sx={{
@@ -34,7 +37,7 @@ const Intro = props =>
 		</Flex>
 
 		<Flex
-			gridColumn='1/7'
+			gridColumn={{min: '1/-1', sm: '1/7'}}
 			gridRow='2'
 			width='100%'
 			flexes='cbs'
@@ -43,8 +46,8 @@ const Intro = props =>
 		>
 				
 			<Signup
-				mt={{all: 8, md: 9}}
-				mb={{all: 7, md: 8}}
+				mt={{min: 8, md: 9}}
+				mb={{min: 7, md: 8}}
 			/>
 
 			<Text
@@ -59,14 +62,18 @@ const Intro = props =>
 		</Flex>
 
 		<Flex
-			gridColumn='7/-1'
-			gridRow='2'
+			gridColumn={{min: '1/-1', sm: '7/-1'}}
+			gridRow={{min: 4, sm: 2}}
 			p={3}
 			flexes='ces'
 			bg='black'
 
 		>
-			<Text variant='s4' color='whites.2'>
+			<Text
+				variant='s4'
+				color='whites.2'
+				pt='8'
+			>
 				Platform overview: 1) Selecting node, 2) Finding connections, 3) Creating new node.
 			</Text>
 		</Flex>

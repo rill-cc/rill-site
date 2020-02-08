@@ -21,8 +21,8 @@ const Utilities = props => {
 		{LiItemList}
 
 		<Flex as='aside'
-			gridColumn='7/-1'
-			gridRow='1/4'
+			gridColumn={{ min: '1/-1', sm: '7/-1' }}
+			gridRow={{ min: '4', sm: '1/4' }}
 			flexes='ccc'
 			bg='accent'
 		>

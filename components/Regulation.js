@@ -10,30 +10,33 @@ const Regulation = props => {
 			gridColumn='1/-1'
 		>
 			<Grid
-				gridColumn='1/7'
-				py={4}
+				gridColumn={{ min: '1/-1', sm: '1/7' }}
+				py={{ min: 3, xsm: 4 }}
 				sx={{
 					borderBottom: '1px solid',
 					borderRight: '1px solid',
 					borderColor: 'blacks.0',
 				}}
-				gridTemplateColumns='repeat(6, 1fr)'
+				gridTemplateColumns={{
+					min: 'repeat(12, 1fr)',
+					sm: 'repeat(6, 1fr)',
+				}}
 			>
 			<Flex
-				gridColumn='1/4'
+				gridColumn={{ min: '1/-1', xsm: '1/6', sm: '1/4' }}
 				flexes='css'
 			>
 				<Text
 					variant='s3'
 					pb={2}
-					pl={4}
+					pl={{ min: 3, xsm: 4 }}
 				>
 					{item.rowTitle}
 				</Text>
 				<Text
 					variant='s3'
 					color='blacks.3'
-					pl={4}
+					pl={{ min: 3, xsm: 4 }}
 				>
 					{item.rowDesc}
 				</Text>
@@ -43,7 +46,7 @@ const Regulation = props => {
 
 			<Flex as='ul'
 				flexes='rss'
-				gridColumn='7/-1'
+				gridColumn={{ min: '1/-1', sm: '7/-1' }}
 				height='100%'
 			>
 				{item.children.map(point =>

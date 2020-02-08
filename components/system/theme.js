@@ -3,13 +3,20 @@ import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
 
-const breakpoints = ['24rem', '48em', '64em', '80em', '90em']
-																 // 1: 0-383
-breakpoints.xsm	= breakpoints[0] // 2: 384-767
-breakpoints.sm	= breakpoints[1] // 3: 768-1023
-breakpoints.md	= breakpoints[2] // 4: 1024-1239
-breakpoints.lg	= breakpoints[3] // 5: 1280-1440
-breakpoints.xlg	= breakpoints[4] // 6: 1440+
+const breakpoints = [
+	'0rem',
+	'24rem',	// 1: xsm		384
+	'48em',		// 2: sm		768
+	'64em',		// 3: md		1024
+	'80em',		// 4: lg		1280
+	'90em',		// 5: xlg		1440
+]
+breakpoints.min	= breakpoints[0]
+breakpoints.xsm	= breakpoints[1]
+breakpoints.sm	= breakpoints[2]
+breakpoints.md	= breakpoints[3]
+breakpoints.lg	= breakpoints[4]
+breakpoints.xlg	= breakpoints[5]
 
 const space = [
 	0,
@@ -50,12 +57,12 @@ const lineHeights = '1.25'
 
 const text = {
 	s1: {
-		fontSize: [2, null, null, 3],
+		fontSize: [2, null, null, null, 3],
 		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 	s2: {
-		fontSize: [1, null, null, 2],
+		fontSize: [1, null, 2],
 		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},

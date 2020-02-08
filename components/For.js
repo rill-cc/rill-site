@@ -10,10 +10,12 @@ const For = props => {
 	return (
 	<>
 		
-		<Layout as='section'>
+		<Layout as='section'
+			flexes='rss'
+			py={{all: 4, sm: 6}}
+		>
 			<Text
 				gridColumn='1/4'
-				py={6}
 				px={4}
 				variant='s1'
 				styling='caps'
@@ -21,8 +23,8 @@ const For = props => {
 				For
 			</Text>
 			<Flex
-				gridColumn={{all: '4/-1', lg: '4/10'}}
-				flexes={{all: 'rsc', lg: 'rbc'}}
+				gridColumn={{ min: '5/-1', md: '4/-1', lg: '4/10' }}
+				flexes={{ min: 'css', sm: 'rsc', lg: 'rbc' }}
 			>
 				<Tab handleTabs={handleTabs} state={activeTab} name='Researcher' />
 				<Tab handleTabs={handleTabs} state={activeTab} name='Activist' />

@@ -18,7 +18,7 @@ const HelperColumn = styled(Flex)`
 `;
 
 export default () => {
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
   useEffect(() => {
     window.addEventListener('keydown', toggleActive)
     return () => {

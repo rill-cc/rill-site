@@ -5,21 +5,25 @@ export const LiItem = props =>
 	<Grid as='li'
 		gridColumn={props.column}
 		gridRow={props.row}
-		py={4}
+		py={{ min: 3, xsm: 4 }}
+		pb={{ min: 8, xsm: 8, sm: 4 }}
 		sx={{
 			borderBottom: '1px solid',	
 			borderColor: 'blacks.0',
 		}}
-		gridTemplateColumns='repeat(6, 1fr)'
+		gridTemplateColumns={{
+			min: 'repeat(12, 1fr)',
+			sm: 'repeat(6, 1fr)',
+		}}
 	>
 		<Flex
-			gridColumn='1/4'
+			gridColumn={{ min: '1/-1', xsm: '1/10', md: '1/4' }}
 			flexes='css'
 		>
 			<Text as='h3'
 				variant='s3'
 				pb={2}
-				pl={4}
+				pl={{ min: 3, xsm: 4 }}
 				sx={{ display: 'flex' }}
 				flexes='rss'
 			>
@@ -41,5 +45,5 @@ export const LiItem = props =>
 	</Grid>
 
 	LiItem.defaultProps = {
-		column: '1/7',
+		column: {min: '1/-1', sm: '1/7'},
 	}

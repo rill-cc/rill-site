@@ -7,8 +7,8 @@ export const Heading = props =>
 		width='100%'
 		variant='s1'
 		styling='caps'
-		py={6}
-		px={4}
+		py={{min: 4, sm: 6}}
+		px={{ min: 3, xsm: 4 }}
 		sx={{
 			position: 'relative',
 			borderBottom: `${props.isOpen ? null : '1px solid'}`,

@@ -30,7 +30,8 @@ export const QAItem = props => {
 				width='100%'
 				onClick={toggleSection}
 				variant='s3'
-				p={4}
+				p={{ min: 3, xsm: 4 }}
+				pr={{ min: 6 }}
 				sx={{ position: 'relative' }}
 			>
 				{props.title}
@@ -43,7 +44,7 @@ export const QAItem = props => {
 				color='blacks.3'
 				overflow='hidden'
 				maxHeight={height}
-				px={4}
+				px={{ min: 3, xsm: 4 }}
 			>
 				{props.desc}
 			</Text>

@@ -24,15 +24,15 @@ const Utilities = props => {
 	<Section heading='How'>
 
 		<Flex as='ul'
-			gridColumn='1/7'
-			p={4}
+			gridColumn={{ min: '1/-1', sm: '1/7' }}
+			p={{ min: 3, xsm: 4 }}
 			flexes='css'
 		>
 			{StepList}
 		</Flex>
 
 		<Flex as='aside'
-			gridColumn='7/-1'
+			gridColumn={{ min: '1/-1', sm: '7/-1' }}
 			pb='100%'
 			bg='accent'
 			sx={{ position: 'relative' }}

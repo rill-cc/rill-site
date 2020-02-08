@@ -5,9 +5,9 @@ import { C } from './bridge'
 // Create text block
 const LiItem = props =>
 	<Flex
-		width={1/4}
+		width={{all: 1/2, sm: 1/4}}
 		flexes='cbs'
-		p={4}
+		p={{ min: 3, xsm: 4 }}
 		sx={{
 			borderBottom: '1px solid',
 			borderTop: '1px solid',
@@ -39,7 +39,8 @@ export const Tab = props =>
 		variant='s1'
 		styling='caps'
 		link={props.state === props.name ? 'underline' : null}
-		mr={{all: 4, lg: 0}}
+		mr={{min: 4, lg: 0}}
+		mb={{min: 1, sm: 0}}
 		sx={{
 			':last-child': {mr: 0},
 		}}

@@ -17,13 +17,13 @@ const QA = props => {
 	return (
 		<Section heading='Q&A'>
 			<Flex
-				gridColumn='1/7'
+				gridColumn={{ min: '1/-1', sm: '1/7' }}
 			>
 				{QAItemList}
 			</Flex>
 			
 			<Flex
-				gridColumn='7/-1'
+				gridColumn={{ min: '1/-1', sm: '7/-1' }}
 				bg='accent'
 				flexes='ccc'
 			>
