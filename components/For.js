@@ -23,7 +23,7 @@ const For = props => {
 				For
 			</Text>
 			<Flex
-				gridColumn={{ min: '5/-1', md: '4/-1', lg: '4/10' }}
+				gridColumn={{ min: '5/-1', sm: '4/-1', md: '4/-1', lg: '4/10' }}
 				flexes={{ min: 'css', sm: 'rsc', lg: 'rbc' }}
 			>
 				<Tab handleTabs={handleTabs} state={activeTab} name='Researcher' />

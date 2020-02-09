@@ -15,6 +15,7 @@ export const Text = forwardRef((props, ref) =>
 export const Link = forwardRef((props, ref) =>
   <Text
     as='a'
+    variant='link'
     {...props}
   />
 )
@@ -33,9 +34,8 @@ export const Button = forwardRef((props, ref) =>
       textTransform: 'uppercase',
       textDecoration: 'none',
       fontSize: 'inherit',
-      p: 3,
-      color: 'black',
-      bg: 'accent',
+      color: 'inherit',
+      bg: 'inherit',
       border: 0,
       borderRadius: 0,
     }}
@@ -52,7 +52,6 @@ export const Input = forwardRef((props, ref) =>
     {...props}
     __css={{
       display: 'block',
-      p: 3,
       appearance: 'none',
       fontSize: 'inherit',
       lineHeight: 'inherit',

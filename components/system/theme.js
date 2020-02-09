@@ -2,21 +2,22 @@ import React from 'react'
 import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
+import paddings from './paddings'
 
 const breakpoints = [
-	'0rem',
+	
 	'24rem',	// 1: xsm		384
 	'48em',		// 2: sm		768
 	'64em',		// 3: md		1024
 	'80em',		// 4: lg		1280
 	'90em',		// 5: xlg		1440
 ]
-breakpoints.min	= breakpoints[0]
-breakpoints.xsm	= breakpoints[1]
-breakpoints.sm	= breakpoints[2]
-breakpoints.md	= breakpoints[3]
-breakpoints.lg	= breakpoints[4]
-breakpoints.xlg	= breakpoints[5]
+breakpoints.min	= '0rem'
+breakpoints.xsm	= breakpoints[0]
+breakpoints.sm	= breakpoints[1]
+breakpoints.md	= breakpoints[2]
+breakpoints.lg	= breakpoints[3]
+breakpoints.xlg	= breakpoints[4]
 
 const space = [
 	0,
@@ -79,7 +80,9 @@ const text = {
 }
 
 const styling = {
-	caps: { textTransform: 'uppercase' },
+	caps: {
+		textTransform: 'uppercase'
+	},
 }
 
 const links = {
@@ -91,6 +94,7 @@ const links = {
 
 const variants = {
 	flexes,
+	paddings,
 }
 
 const theme = {
@@ -103,6 +107,7 @@ const theme = {
 	text,
 	variants,
 	flexes,
+	paddings,
 	styling,
 	links,
 }
