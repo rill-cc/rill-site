@@ -12,20 +12,11 @@ export const LiItem = props =>
 			borderRight: '1px solid',
 			borderColor: 'blacks.0',
 			':last-child': {
-				borderRight: '0px solid',
+				border: '0px',
 			}
 		}}
 	>
-		<Text
-			variant='s3'
-			pb={1}
-		>
-			{props.liTitle}
-		</Text>
-		<Text
-			variant='s3'
-			color='blacks.3'
-		>
-			{props.liDesc}
-		</Text>
+		<Text variant='s3' pb={1}>{props.liTitle}</Text>
+		<Text variant='s3' color='blacks.3'>{props.liDesc}</Text>
 	</Flex>
+

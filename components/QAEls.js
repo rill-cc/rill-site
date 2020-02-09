@@ -4,14 +4,21 @@ import { IconReveal } from './IconReveal'
 
 export const QAItem = props => {
 	const [open, setOpen] = useState(false)
-	const [height, setHeight] = useState(false)
+	const [height, setHeight] = useState('')
 	const ref = useRef(null)
 	
 	const toggleSection = () => {
 		setOpen(!open)
 		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
 	}
-	useEffect(toggleSection, [ref])
+	useEffect(() => {
+			window.addEventListener('load', toggleSection)
+			window.addEventListener('resize', toggleSection)
+			return (() => {
+				window.removeEventListener('load', toggleSection)
+				window.removeEventListener('resize', toggleSection)
+			})
+		}, [ref])
 
 	return (
 		<Flex
@@ -45,6 +52,7 @@ export const QAItem = props => {
 				overflow='hidden'
 				maxHeight={height}
 				ps='xsm'
+				mb={3}
 			>
 				{props.desc}
 			</Text>

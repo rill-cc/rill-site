@@ -11,6 +11,7 @@ const Outro = props =>
 			ps='sm'
 			flexes='css'
 			variant='s1'
+			pb={{min: 8, md: 9}}
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
@@ -24,7 +25,7 @@ const Outro = props =>
 			gridRow='2'
 			width='100%'
 			flexes='cbs'
-			px={3}
+			ps='xsm'
 			bg='accent'
 		>
 				<Signup
@@ -47,7 +48,7 @@ const Outro = props =>
 			gridRow={{ min: 3, sm: 1 }}
 			bg='black'
 			ps='sm'
-			pb={{min: 8, xsm: 8, sm: 0}}
+			pb={{ min: 8, md: 9 }}
 			variant='s1'
 			color='accent'
 			sx={{
@@ -62,7 +63,7 @@ const Outro = props =>
 		<Flex
 			gridColumn={{ min: '1/-1', sm: '7/-1' }}
 			gridRow={{ min: 4, sm: 2 }}
-			px={3}
+			ps='xsm'
 			flexes='cbs'
 			bg='black'
 		>

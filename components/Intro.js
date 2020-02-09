@@ -33,7 +33,11 @@ const Intro = props =>
 				borderColor: 'whites.0',
 			}}
 		>
-		<Image src='/images/video.png' alt='platform'/>
+		<Image
+			src='/images/video.png' alt='platform'
+			width='100%'
+			height='100%'
+		/>
 		</Flex>
 
 		<Flex

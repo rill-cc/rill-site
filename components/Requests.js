@@ -36,7 +36,7 @@ const Requests = props => {
 				{item.linkTitle}
 				<Flex as='span'
 					sx={{
-						display: ['none', 'none', 'none', 'none', 'flex'],
+						display: ['none', null, null, 'flex'],
 					}}
 				>
 					<IconExtLink/>

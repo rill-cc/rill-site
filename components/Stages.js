@@ -26,16 +26,16 @@ const Stages = props => {
 					pb={{ min: 8, sm: 0 }}
 				>
 					<Text
-						variant='s3'
 						pb={2}
-						ps='lsm'
+						ps='xsm'
+						variant='s3'
 					>
 						{item.title}
 					</Text>
 					<Text
+						ps='xsm'
 						variant='s3'
 						color='blacks.3'
-						ps='lsm'
 					>
 						{item.desc}
 					</Text>
@@ -53,7 +53,7 @@ const Stages = props => {
 				<Flex
 					flexes={{ min: 'css', sm: 'ccc' }}
 					width='100%'
-					py={10}
+					py={{ min: 8, sm: 10 }}
 				>
 					{item.tasks.map(task =>
 						<Text as='li'

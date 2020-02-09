@@ -1,6 +1,6 @@
 const sm = [3, 4]
 const md = [3, 4]
-const lg = [3, 4]
+const lg = [8, null, null, 9]
 
 export const paddings = {
 	sm: { p: sm },
