@@ -15,14 +15,7 @@ const Regulation = props => {
 			setOpen(!open)
 			setHeight(open === false ? '0px' : `${ref.currentScrollHeight}px`)
 		}
-		useEffect(() => {
-			window.addEventListener('load', toggleBullets)
-			window.addEventListener('resize', toggleBullets)
-			return (() => {
-				window.removeEventListener('load', toggleBullets)
-				window.removeEventListener('resize', toggleBullets)
-			})
-		}, [ref])
+		useEffect(toggleBullets, [ref])
 
 		return (
 			<Layout

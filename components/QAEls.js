@@ -7,18 +7,11 @@ export const QAItem = props => {
 	const [height, setHeight] = useState('')
 	const ref = useRef(null)
 	
-	const toggleSection = () => {
+	const toggleQuestion = () => {
 		setOpen(!open)
 		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
 	}
-	useEffect(() => {
-			window.addEventListener('load', toggleSection)
-			window.addEventListener('resize', toggleSection)
-			return (() => {
-				window.removeEventListener('load', toggleSection)
-				window.removeEventListener('resize', toggleSection)
-			})
-		}, [ref])
+	useEffect(toggleQuestion, [ref])
 
 	return (
 		<Flex
@@ -35,7 +28,7 @@ export const QAItem = props => {
 		>
 			<Text
 				width='100%'
-				onClick={toggleSection}
+				onClick={toggleQuestion}
 				variant='s3'
 				ps='sm'
 				pr={{ min: 6 }}
