@@ -42,7 +42,10 @@ export const Tab = props =>
 		mr={{min: 4, lg: 0}}
 		mb={{min: 1, sm: 0}}
 		sx={{
-			':last-child': {mr: 0},
+			':last-child': {
+				mr: 0,
+				mb: 0,
+			},
 		}}
 	>
 	{props.name}

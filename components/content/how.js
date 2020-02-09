@@ -11,11 +11,11 @@ export const How = {
 	],
 	figs: [
 		{
-			id: 'Fig. 1',
+			id: 'Figure 1',
 			desc: 'Cause and effect of selected node',
 		},
 		{
-			id: 'Fig. 2',
+			id: 'Figure 2',
 			desc: 'Mixed node connections',
 		},
 	],

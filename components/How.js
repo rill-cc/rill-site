@@ -14,6 +14,9 @@ const Utilities = props => {
 			key={step.id}
 			variant='s2'
 			pb={3}
+			sx={{
+				':last-child': { pb: 0 }
+			}}
 		>
 			{step.id}<br/>
 			{step.desc}

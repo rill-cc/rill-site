@@ -11,7 +11,8 @@ export const Heading = props =>
 		px={{ min: 3, xsm: 4 }}
 		sx={{
 			position: 'relative',
-			borderBottom: `${props.isOpen ? null : '1px solid'}`,
+			borderBottom: '1px solid',
+			borderBottom: `${props.isOpen ? '0px' : '1px solid'}`,
 			borderColor: 'blacks.0',
 			cursor: 'row-resize',
 		}}

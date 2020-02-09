@@ -2,9 +2,9 @@ import { Flex, Text } from './system'
 
 export const LiItem = props => 
 	<Flex as='li'
-		width='33.33%'
-		height='100%'
-		p={3}
+		width={{ min: '100%', sm: '33.33%' }}
+		height={{ min: 'auto', sm: '100%' }}
+		ps='sm'
 		sx={{
 			flexGrow: '1',
 			flexFlow: 'column',

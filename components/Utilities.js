@@ -22,7 +22,7 @@ const Utilities = props => {
 
 		<Flex as='aside'
 			gridColumn={{ min: '1/-1', sm: '7/-1' }}
-			gridRow={{ min: '1/-1', xsm: '1/10', md: '1/4' }}
+			gridRow={{ min: '1', sm: '2/5' }}
 			flexes='ccc'
 			bg='accent'
 		>
