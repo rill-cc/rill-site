@@ -25,6 +25,8 @@ export const Button = forwardRef((props, ref) =>
     ref={ref}
     as='button'
     variant='primary'
+    px={{ min: 2, sm: 3 }}
+    py={3}
     {...props}
     __css={{
       appearance: 'none',

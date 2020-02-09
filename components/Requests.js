@@ -9,7 +9,7 @@ const Requests = props => {
 		<Grid as='li'
 			key={item.id}
 			width='100%'
-			py={4}
+			ps='ysm'
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
@@ -21,14 +21,14 @@ const Requests = props => {
 		>
 			<Text
 				gridColumn={{ min: '1/7', sm: '1/4' }}
-				pl={{ min: 3, xsm: 4 }}
+				ps='lsm'
 			>
 				{item.title}
 			</Text>
 			<Link
 				src={item.url}
 				gridColumn={{ min: '7/-1', sm: '4/-1' }}
-				pr={{ min: 3, sm: 4 }}
+				ps='rsm'
 				textAlign={{ min: 'right', md: 'left' }}
 				color='blacks.3'
 				sx={{ position: 'relative' }}
@@ -49,7 +49,7 @@ const Requests = props => {
 		<Section heading='Requests'>
 			<Flex
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
-				p={4}
+				ps='sm'
 				sx={{
 					borderRight: '1px solid',
 					borderColor: 'blacks.0',

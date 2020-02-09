@@ -16,7 +16,7 @@ const For = props => {
 		>
 			<Text
 				gridColumn='1/4'
-				px={4}
+				ps='xsm'
 				variant='s1'
 				styling='caps'
 			>

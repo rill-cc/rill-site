@@ -30,7 +30,7 @@ export const QAItem = props => {
 				width='100%'
 				onClick={toggleSection}
 				variant='s3'
-				p={{ min: 3, xsm: 4 }}
+				ps='sm'
 				pr={{ min: 6 }}
 				sx={{ position: 'relative' }}
 			>
@@ -38,13 +38,13 @@ export const QAItem = props => {
 				<IconReveal isOpen={open} />
 			</Text>
 			<Text
-				width='100%'
 				ref={ref}
+				width='100%'
 				variant='s3'
 				color='blacks.3'
 				overflow='hidden'
 				maxHeight={height}
-				px={{ min: 3, xsm: 4 }}
+				ps='xsm'
 			>
 				{props.desc}
 			</Text>

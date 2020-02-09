@@ -7,7 +7,7 @@ const LiItem = props =>
 	<Flex
 		width={{all: 1/2, sm: 1/4}}
 		flexes='cbs'
-		p={{ min: 3, xsm: 4 }}
+		ps='sm'
 		sx={{
 			borderBottom: '1px solid',
 			borderTop: '1px solid',

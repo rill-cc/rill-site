@@ -25,7 +25,7 @@ const Utilities = props => {
 
 		<Flex as='ul'
 			gridColumn={{ min: '1/-1', sm: '1/7' }}
-			p={{ min: 3, xsm: 4 }}
+			ps='sm'
 			flexes='css'
 		>
 			{StepList}
@@ -60,7 +60,7 @@ const Utilities = props => {
 				<Flex
 					flexes='css'
 					width='100%'
-					p={4}
+					ps='sm'
 				>
 					<Tab
 						name='Fig1'

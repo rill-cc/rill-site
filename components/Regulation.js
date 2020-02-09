@@ -11,7 +11,7 @@ const Regulation = props => {
 		>
 			<Grid
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
-				py={{ min: 3, xsm: 4 }}
+				ps='ysm'
 				sx={{
 					borderBottom: '1px solid',
 					borderRight: '1px solid',
@@ -29,14 +29,14 @@ const Regulation = props => {
 				<Text
 					variant='s3'
 					pb={2}
-					pl={{ min: 3, xsm: 4 }}
+					ps='lsm'
 				>
 					{item.rowTitle}
 				</Text>
 				<Text
 					variant='s3'
 					color='blacks.3'
-					pl={{ min: 3, xsm: 4 }}
+					ps='lsm'
 				>
 					{item.rowDesc}
 				</Text>

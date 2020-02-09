@@ -5,7 +5,6 @@ export const Signup = props =>
 		width='100%'
 		flexes='rsc'
 		variant='text.s3'
-		py={3}
 		sx={{
 			border: '1px solid',
       borderColor: 'blacks.1',
@@ -19,7 +18,6 @@ export const Signup = props =>
 		/>
 		<Button
 			width='fit-content'
-			px={{ min: 2, sm: 3 }}
 		>
 			Sign up
 		</Button>

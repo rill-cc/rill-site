@@ -8,7 +8,7 @@ const Outro = props =>
 			gridColumn={{ min: '1/-1', sm: '1/7' }}
 			gridRow='1'
 			bg='accent'
-			p={{ min: 3, xsm: 4 }}
+			ps='sm'
 			flexes='css'
 			variant='s1'
 			sx={{
@@ -46,7 +46,7 @@ const Outro = props =>
 			gridColumn={{ min: '1/-1', sm: '7/-1' }}
 			gridRow={{ min: 3, sm: 1 }}
 			bg='black'
-			p={{ min: 3, xsm: 4 }}
+			ps='sm'
 			pb={{min: 8, xsm: 8, sm: 0}}
 			variant='s1'
 			color='accent'

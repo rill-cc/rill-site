@@ -2,15 +2,14 @@ import React from 'react'
 import { ThemeProvider } from 'emotion-theming'
 import { injectGlobal } from 'emotion'
 import flexes from './flexes'
-import paddings from './paddings'
+import { paddings, margins } from './gaps'
 
 const breakpoints = [
-	
-	'24rem',	// 1: xsm		384
-	'48em',		// 2: sm		768
-	'64em',		// 3: md		1024
-	'80em',		// 4: lg		1280
-	'90em',		// 5: xlg		1440
+	'24rem',	// 1: 384
+	'48em',		// 2: 768
+	'64em',		// 3: 1024
+	'80em',		// 4: 1280
+	'90em',		// 5: 1440
 ]
 breakpoints.min	= '0rem'
 breakpoints.xsm	= breakpoints[0]
@@ -21,16 +20,16 @@ breakpoints.xlg	= breakpoints[4]
 
 const space = [
 	0,
-	'0.5rem',	// 1: 8px
-	'1rem',		// 2: 16px
-	'1.5rem',	// 3: 24px
-	'2rem',		// 4: 32px
-	'3rem',		// 5: 48px
-	'4rem',		// 6: 64px
-	'5rem',		// 7: 80px
-	'6rem',		// 8: 96px
-	'7rem',		// 9: 112px
-	'8rem',		// 10: 128px
+	'0.5rem',	// 1: 8
+	'1rem',		// 2: 16
+	'1.5rem',	// 3: 24
+	'2rem',		// 4: 32
+	'3rem',		// 5: 48
+	'4rem',		// 6: 64
+	'5rem',		// 7: 80
+	'6rem',		// 8: 96
+	'7rem',		// 9: 112
+	'8rem',		// 10: 128
 ]
 
 const colors = {
@@ -53,17 +52,23 @@ const colors = {
 }
 
 const fonts = 'Helvetica Neue, -system, Sans-Serif'
-const fontSizes = ['.75rem', '1rem', '1.5rem', '2rem']
+const fontSizes = [
+	'.75rem',		// 0: 12
+	'1rem',			// 1: 16
+	'1.25rem',	// 2: 20
+	'1.5rem',		// 3: 24
+	'2rem',			// 4: 32
+]
 const lineHeights = '1.25'
 
 const text = {
 	s1: {
-		fontSize: [2, null, null, null, 3],
+		fontSize: [2, null, null, null, 4],
 		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
 	s2: {
-		fontSize: [1, null, 2],
+		fontSize: [2, null, 3],
 		lineHeight: lineHeights,
 		color: 'blacks.4',
 	},
@@ -95,6 +100,7 @@ const links = {
 const variants = {
 	flexes,
 	paddings,
+	margins,
 }
 
 const theme = {
@@ -108,6 +114,7 @@ const theme = {
 	variants,
 	flexes,
 	paddings,
+	margins,
 	styling,
 	links,
 }

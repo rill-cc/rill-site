@@ -10,7 +10,7 @@ const Stages = props => {
 			<Grid
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
 				flexes='css'
-				py={{ min: 3, xsm: 4 }}
+				ps='ysm'
 				sx={{
 					borderBottom: '1px solid',
 					borderColor: 'blacks.0',
@@ -28,14 +28,14 @@ const Stages = props => {
 					<Text
 						variant='s3'
 						pb={2}
-						pl={{ min: 3, xsm: 4 }}
+						ps='lsm'
 					>
 						{item.title}
 					</Text>
 					<Text
 						variant='s3'
 						color='blacks.3'
-						pl={4}
+						ps='lsm'
 					>
 						{item.desc}
 					</Text>
@@ -60,7 +60,6 @@ const Stages = props => {
 							key={task.id}
 							pb={1}
 							ml={{ min: 6, sm: 0 }}
-							// pr={{ min: 3, sm: 0 }}
 							width={{ min: 3/4, sm: 2/3 }}
 							variant='s2'
 							color={task.completed ? 'blacks.2' : 'blacks.4'}

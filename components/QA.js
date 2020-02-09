@@ -28,7 +28,7 @@ const QA = props => {
 				flexes='ccc'
 			>
 				<Flex
-					p={{ min: 3, xsm: 4 }}
+					ps='sm'
 					pb={{min: 8, xsm: 8, sm: 0}}
 					width='100%'
 					height='50%'
@@ -44,14 +44,21 @@ const QA = props => {
 					bg='accent'
 					width='100%'
 					height='50%'
-					p={{ min: 3, xsm: 4 }}
+					ps='sm'
 					py={{min: 8, xsm: 8, sm: 0}}
 				>
 					<Flex
 						flexes='ccc'
 						width='100%'
 					>
-						<Button bg='black' color='accent' width='100%'>Contact</Button>
+						<Button
+							bg='black'
+							color='accent'
+							width='100%'
+							p={3}
+						>
+							Contact
+						</Button>
 					</Flex>
 
 			</Flex>

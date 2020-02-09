@@ -41,6 +41,12 @@ const paddings = variant({
   prop: 'ps',
   variants: 'paddings',
 })
+/* Margins */
+const margins = variant({
+  scale: 'margins',
+  prop: 'ms',
+  variants: 'margins',
+})
 /* Text styling */
 const styling = variant({
 	scale: 'styling',
@@ -64,6 +70,7 @@ export const Box = styled('div', {
   base,
   flexes,
   paddings,
+  margins,
   styling,
   links,
   __variant,
