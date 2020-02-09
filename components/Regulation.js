@@ -15,7 +15,7 @@ const Regulation = props => {
 			setOpen(!open)
 			setHeight(open === false ? '0px' : `${ref.currentScrollHeight}px`)
 		}
-		useEffect(toggleBullets)
+		useEffect(toggleBullets, [ref])
 
 		return (
 			<Layout
@@ -44,8 +44,9 @@ const Regulation = props => {
 				>
 					<Text variant='s3' pb={2} ps='xsm'>{item.rowTitle}</Text>
 					<Text variant='s3' color='blacks.3' ps='xsm'>{item.rowDesc}</Text>
+						<br />
 						<Link
-							pt={3}
+							mt={3}
 							ms='xsm'
 							link='underline'
 							onClick={toggleBullets}
@@ -53,7 +54,6 @@ const Regulation = props => {
 								display: ['flex', 'flex', 'none']
 								}}
 						>
-							<br />
 							Learn more
 						</Link>
 				</Flex>
@@ -81,7 +81,10 @@ const Regulation = props => {
 	})
 
 	return (
-	<Section heading='Content Regulation'>
+	<Section
+		heading='Content Regulation'
+		keepOpen={false}
+	>
 		{RowItemList}
 	</Section>
 	)

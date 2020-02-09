@@ -75,7 +75,10 @@ const Stages = props => {
 	)
 
 	return (
-		<Section heading='Stages'>
+		<Section
+			heading='Stages'
+			keepOpen={false}
+		>
 			{StageItemList}
 		</Section>
 		)

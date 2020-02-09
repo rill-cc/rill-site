@@ -46,7 +46,10 @@ const Requests = props => {
 		)
 
 	return (
-		<Section heading='Requests'>
+		<Section
+			heading='Requests'
+			keepOpen={false}
+		>
 			<Flex
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
 				ps='sm'

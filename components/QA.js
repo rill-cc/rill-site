@@ -15,7 +15,10 @@ const QA = props => {
 	)
 
 	return (
-		<Section heading='Q&A'>
+		<Section
+			heading='Q&A'
+			keepOpen={false}
+		>
 			<Flex
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
 			>

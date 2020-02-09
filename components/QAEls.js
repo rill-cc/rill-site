@@ -11,7 +11,7 @@ export const QAItem = props => {
 		setOpen(!open)
 		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
 	}
-	useEffect(toggleQuestion)
+	useEffect(toggleQuestion, [ref])
 
 	return (
 		<Flex
@@ -45,9 +45,10 @@ export const QAItem = props => {
 				overflow='hidden'
 				maxHeight={height}
 				ps='xsm'
-				mb={3}
 			>
 				{props.desc}
+				<br />
+				<br />
 			</Text>
 		</Flex>
 	)

@@ -27,9 +27,9 @@ export const LiItem = props =>
 				sx={{ display: 'flex' }}
 				flexes='rss'
 			>
-				{props.icon === '1' && <Pict01 />}
-				{props.icon === '2' && <Pict02 />}
-				{props.icon === '3' && <Pict03 />}
+				{props.icon === '2' && <Pict01 />}
+				{props.icon === '3' && <Pict02 />}
+				{props.icon === '4' && <Pict03 />}
 				
 				{props.title}
 				
