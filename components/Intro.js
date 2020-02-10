@@ -18,7 +18,7 @@ const Intro = props =>
 				ps='sm'
 				pb={{min: 8, xsm: 8, sm: 0}}
 			>
-				<Text variant='s1' styling='caps'>RILL.</Text>
+				<Text variant='s1' styling='caps'>RILL—Common Connections</Text>
 				<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
 			</Flex>
 		</Flex>

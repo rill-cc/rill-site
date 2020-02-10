@@ -3,7 +3,6 @@ module.exports = {
   exportPathMap: async function() {
     const paths = {
       '/': { page: '/' },
-      '/mission': { page: '/mission' }
     }
 
     return paths;
