@@ -32,7 +32,7 @@ const QA = props => {
 			>
 				<Flex
 					ps='sm'
-					pb={{min: 8, xsm: 8, sm: 0}}
+					pb={{min: 8, sm: 0}}
 					width='100%'
 					height='50%'
 					sx={{
@@ -48,7 +48,7 @@ const QA = props => {
 					width='100%'
 					height='50%'
 					ps='sm'
-					py={{min: 8, xsm: 8, sm: 0}}
+					py={{min: 8, sm: 0}}
 				>
 					<Flex
 						flexes='ccc'

@@ -8,7 +8,7 @@ export const Heading = props =>
 		variant='s1'
 		styling='caps'
 		py={{min: 4, sm: 6}}
-		px={{ min: 3, xsm: 4 }}
+		ps='xsm'
 		sx={{
 			position: 'relative',
 			borderBottom: '1px solid',

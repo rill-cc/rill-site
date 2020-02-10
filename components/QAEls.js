@@ -37,7 +37,7 @@ export const QAItem = props => {
 				{props.title}
 				<IconReveal isOpen={open} />
 			</Text>
-			<Text
+			<Text as='span'
 				ref={ref}
 				width='100%'
 				variant='s3'
@@ -45,10 +45,9 @@ export const QAItem = props => {
 				overflow='hidden'
 				maxHeight={height}
 				ps='xsm'
+				bg='accent'
 			>
-				{props.desc}
-				<br />
-				<br />
+				<Text py={3}>{props.desc}</Text>
 			</Text>
 		</Flex>
 	)

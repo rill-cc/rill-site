@@ -36,7 +36,7 @@ const Requests = props => {
 				{item.linkTitle}
 				<Flex as='span'
 					sx={{
-						display: ['none', null, null, 'flex'],
+						display: [null, 'none', null, 'flex'],
 					}}
 				>
 					<IconExtLink/>
@@ -54,8 +54,9 @@ const Requests = props => {
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
 				ps='sm'
 				sx={{
-					borderRight: '1px solid',
-					borderColor: 'blacks.0',
+					borderRight: [null, null, '1px solid'],
+					borderBottom: [null, '1px solid', '0px'],
+					borderColor: [null, 'blacks.0'],
 				}}
 			>
 				<Text variant='s2'>{C.Requests.desc}</Text>

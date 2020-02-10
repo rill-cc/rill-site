@@ -22,7 +22,7 @@ const LiItem = props =>
 
 const List = ({items}) => items.map(item =>
 	<LiItem key={item.id}>
-		<Text variant='s3' pb={9}>{item.title}</Text>
+		<Text variant='s3' pb={{ min: 5, md: 9 }}>{item.title}</Text>
 		<Text variant='s3' color='blacks.3'>{item.desc}</Text>
 	</LiItem>
 	)

@@ -13,7 +13,7 @@ const Regulation = props => {
 		
 		const toggleBullets = () => {
 			setOpen(!open)
-			setHeight(open === false ? '0px' : `${ref.currentScrollHeight}px`)
+			setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
 		}
 		useEffect(toggleBullets, [ref])
 
@@ -43,19 +43,17 @@ const Regulation = props => {
 					flexes='css'
 				>
 					<Text variant='s3' pb={2} ps='xsm'>{item.rowTitle}</Text>
-					<Text variant='s3' color='blacks.3' ps='xsm'>{item.rowDesc}</Text>
-						<br />
-						<Link
-							mt={3}
-							ms='xsm'
-							link='underline'
-							onClick={toggleBullets}
-							sx={{
-								display: ['flex', 'flex', 'none']
-								}}
-						>
-							Learn more
-						</Link>
+					<Text variant='s3' color='blacks.3' ps='xsm' pb={5}>{item.rowDesc}</Text>
+					<Link
+						ms='xsm'
+						link='underline'
+						onClick={toggleBullets}
+						sx={{
+							display: ['flex', 'flex', 'none']
+							}}
+					>
+						Learn more
+					</Link>
 				</Flex>
 					
 				</Grid>

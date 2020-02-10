@@ -6,7 +6,7 @@ export const LiItem = props =>
 		gridColumn={props.column}
 		gridRow={props.row}
 		ps='ysm'
-		pb={{ min: 8, xsm: 8, sm: 4 }}
+		pb={{ min: 5, sm: 4 }}
 		sx={{
 			borderBottom: '1px solid',	
 			borderColor: 'blacks.0',
@@ -23,7 +23,7 @@ export const LiItem = props =>
 			<Text as='h3'
 				variant='s3'
 				pb={2}
-				ps='lsm'
+				ps='xsm'
 				sx={{ display: 'flex' }}
 				flexes='rss'
 			>
@@ -37,7 +37,7 @@ export const LiItem = props =>
 			<Text
 				variant='s3'
 				color='blacks.3'
-				ps='lsm'
+				ps='xsm'
 			>
 				{props.desc}
 			</Text>

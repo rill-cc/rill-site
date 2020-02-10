@@ -23,7 +23,7 @@ const Stages = props => {
 				<Flex
 					gridColumn={{ min: '1/-1', xsm: '1/10', md: '1/4' }}
 					flexes='css'
-					pb={{ min: 8, sm: 0 }}
+					pb={{ min: 4, sm: 0 }}
 				>
 					<Text
 						pb={2}
