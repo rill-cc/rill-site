@@ -33,6 +33,6 @@ export const IconReveal = props =>
 			right: 0,
 			ml: 'auto',
 			mr: 'auto',
-		}
+		},
 	}}
 />

@@ -45,7 +45,6 @@ export const QAItem = props => {
 				overflow='hidden'
 				maxHeight={height}
 				ps='xsm'
-				bg='accent'
 			>
 				<Text py={3}>{props.desc}</Text>
 			</Text>

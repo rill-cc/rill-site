@@ -51,6 +51,7 @@ export const Input = forwardRef((props, ref) =>
     type='text'
     tx='forms'
     variant='input'
+    py={3}
     {...props}
     __css={{
       display: 'block',
