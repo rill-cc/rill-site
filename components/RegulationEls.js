@@ -30,7 +30,7 @@ export const RowItem = props => {
 	
 	const toggleBullets = () => {
 		setOpen(!open)
-		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
+		setHeight(open === false ? '0px' : '')
 	}
 	useEffect(toggleBullets, [ref])
 

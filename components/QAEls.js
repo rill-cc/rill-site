@@ -9,7 +9,7 @@ export const QAItem = props => {
 	
 	const toggleQuestion = () => {
 		setOpen(!open)
-		setHeight(open === false ? '0px' : `${ref.current.scrollHeight}px`)
+		setHeight(open === false ? '0px' : '')
 	}
 	useEffect(toggleQuestion, [ref])
 
