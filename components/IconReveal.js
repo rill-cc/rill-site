@@ -12,7 +12,7 @@ export const IconReveal = props =>
 		mb: 'auto',
 		right: 4,
 		'::before': {
-			bg: `${props.isOpen ? 'blacks.2' : 'blacks'}`,
+			bg: `${props.isOpen ? 'black' : 'blacks.2'}`,
 			content: '""',
 			position: 'absolute',
 			width: '21px',
@@ -24,7 +24,7 @@ export const IconReveal = props =>
 		},
 		'::after': {
 			display: `${props.isOpen ? 'block' : 'none'}`,
-			bg: 'blacks.2',
+			bg: 'black',
 			content: '""',
 			position: 'absolute',
 			width: '1px',

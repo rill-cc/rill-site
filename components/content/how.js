@@ -6,7 +6,7 @@ export const How = {
 		},
 		{
 			id: 'b)',
-			desc: 'Nodes are connected by researchers using causal relationships. The result—network of events. That means, each event can be represented in two states: as cause, as effect.',
+			desc: 'Nodes are connected by researchers using causal relationships. Result— network of events, where each event can be represented in two states: as cause, as effect.',
 		},
 	],
 	figs: [

@@ -2,7 +2,7 @@ export const Stages = [
 	{
 		id: '1',
 		title: 'Stage 1',
-		desc: 'Find interested parties, test idea on a small chunk of data. Re-iterate platform logic after. See Project requests.',
+		desc: 'Proof of concept with small amount of data. See "Requests" section.',
 		tasks: [
 			{
 				id: '1',
@@ -24,7 +24,7 @@ export const Stages = [
 	{
 		id: '2',
 		title: 'Stage 2',
-		desc: 'Continue impoving prototype, apply for grants.',
+		desc: 'Collecting feedback, improving prototype.',
 		tasks: [
 			{
 				id: '1',
@@ -51,7 +51,7 @@ export const Stages = [
 	{
 		id: '3',
 		title: 'Stage 3',
-		desc: 'Test on a bigger audience, release beta.',
+		desc: 'First beta-testing and release.',
 		tasks: [
 			{
 				id: '1',

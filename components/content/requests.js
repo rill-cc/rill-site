@@ -1,23 +1,17 @@
 export const Requests = {
-	desc: 'The platform is open to everyone. Depending on the background, everyone gets an access to relevant functionality.',
+	desc: "The project is looking for contributors. Didn't find a role? Contact us.",
 	requests: [
-	{
-		id: '1',
-		title: 'Speciality-x-Specialist',
-		linkTitle: 'View materials',
-		url: '/',
-	},
-	{
-		id: '2',
-		title: 'Speciality-x-Specialist',
-		linkTitle: 'View materials',
-		url: '/',
-	},
-	{
-		id: '3',
-		title: 'Speciality-x-Specialist',
-		linkTitle: 'View materials',
-		url: '/',
-	},
+		{
+			id: '1',
+			title: 'Researcher',
+			linkTitle: 'View materials',
+			url: 'https://gist.github.com/mkaralevich/883cb9ee36a6ce2f968c617885db2afa',
+		},
+		{
+			id: '2',
+			title: 'Activist',
+			linkTitle: 'View materials',
+			url: 'https://gist.github.com/mkaralevich/883cb9ee36a6ce2f968c617885db2afa',
+		}
 	]
 }
