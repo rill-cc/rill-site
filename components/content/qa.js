@@ -16,7 +16,7 @@ export const QA = [
 	},
 	{
 		id: '4',
-		title: 'What is the concept of the platform??',
+		title: 'What is the concept of the platform?',
 		desc: 'The concept is based on a graph theory. It is also inspired by GitHub and Wikipedia.',
 	},
 	{

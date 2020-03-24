@@ -24,7 +24,7 @@ export const Section = props => {
 				ref={ref}
 				maxHeight={height}
 				sx={{
-					borderBottom: '1px solid',
+					borderBottom: `${open ? '1px solid' : '0'}`,
 					borderColor: 'blacks.0',
 				}}
 				{...props}

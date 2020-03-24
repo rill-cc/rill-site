@@ -13,9 +13,6 @@ export const LiItem = props =>
 			borderBottom: '1px solid',
 			borderRight: '1px solid',
 			borderColor: 'blacks.0',
-			':last-child': {
-				border: '0px',
-			}
 		}}
 	>
 		<Text variant='s3' pb={1}>{props.liTitle}</Text>
@@ -46,9 +43,7 @@ export const RowItem = props => {
 				borderBottom: '1px solid',
 				borderRight: '1px solid',
 				borderColor: 'blacks.0',
-				':last-child': {
-					borderBottom: '0px',
-				}
+				
 			}}
 			gridTemplateColumns={{
 				min: 'repeat(12, 1fr)',

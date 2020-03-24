@@ -26,7 +26,7 @@ const Requests = props => {
 				{item.title}
 			</Text>
 			<Link
-				src={item.url}
+				href={item.url}
 				gridColumn={{ min: '7/-1', sm: '4/-1' }}
 				ps='rsm'
 				textAlign={{ min: 'right', md: 'left' }}

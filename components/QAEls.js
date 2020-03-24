@@ -20,9 +20,6 @@ export const QAItem = props => {
 			sx={{
 				borderBottom: '1px solid',
 				borderColor: 'blacks.0',
-				':last-child': {
-					borderBottom: '0px solid',
-				}
 			}}
 			height='max-content'
 		>
