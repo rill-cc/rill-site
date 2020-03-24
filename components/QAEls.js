@@ -36,7 +36,7 @@ export const QAItem = props => {
 			</Text>
 			<Text as='span'
 				ref={ref}
-				width='100%'
+				width={{min: '100%', sm: '88%'}}
 				variant='s3'
 				color='blacks.3'
 				overflow='hidden'

@@ -3,8 +3,9 @@ import { RowItem } from './RegulationEls'
 
 const Regulation = props => {
 	
-	const RowItemList = C.Regulation.map(item =>
+	const RowItemList = C.Regulation.map((item, key) =>
 		<RowItem
+			key={key}
 			id={item.id}
 			rowTitle={item.rowTitle}
 			rowDesc={item.rowDesc}
