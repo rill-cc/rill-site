@@ -1,13 +1,14 @@
+import * as C from './content'
 import { Layout } from './Layout'
 import { Signup } from './Signup'
 import { Heading } from './Heading'
 import { Section } from './Section'
-import * as C from './content'
 
+import Meta from './Meta'
 import Intro from './Intro'
 import For from './For'
 import How from './How'
-import Utilities from './Utilities'
+import Features from './Features'
 import Regulation from './Regulation'
 import QA from './QA'
 import Stages from './Stages'
@@ -19,14 +20,15 @@ import Footer from './Footer'
 
 export {
 	C,
-	Signup,
 	Layout,	
+	Signup,
 	Heading,
 	Section,
+	Meta,
 	Intro,
 	For,
 	How,
-	Utilities,
+	Features,
 	Regulation,
 	QA,
 	Stages,

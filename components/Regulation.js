@@ -16,7 +16,7 @@ const Regulation = props => {
 	return (
 	<Section
 		heading='Content Regulation'
-		keepOpen={true}
+		keepOpen={false}
 	>
 		{RowItemList}
 	</Section>

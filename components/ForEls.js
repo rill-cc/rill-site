@@ -27,9 +27,9 @@ const List = ({items}) => items.map(item =>
 	</LiItem>
 	)
 
-export const ResearcherC = () => <List items={C.For.researcher} />
-export const ActivistC = () => <List items={C.For.activist} />
-export const ObserverC = () => <List items={C.For.observer} />
+export const ResearchersC = () => <List items={C.For.researchers} />
+export const ActivistsC = () => <List items={C.For.activists} />
+export const ObserversC = () => <List items={C.For.observers} />
 
 // Make tab switch
 export const Tab = props =>

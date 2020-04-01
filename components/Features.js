@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react'
-import { Flex, Image } from './system'
+import { Flex, Image, Text } from './system'
 import { C, Section } from './bridge'
-import { LiItem } from './UtilitiesEls'
+import { LiItem } from './FeaturesEls'
 
-const Utilities = props => {
+export default function Features (props) {
 
-	const LiItemList = C.Utilities.map(item =>
+	const LiItemList = C.Features.map(item =>
 		<LiItem
 			key={item.id}
 			row={item.id}
@@ -16,7 +16,7 @@ const Utilities = props => {
 	)
 
 	return (
-	<Section heading='Utilities'>
+	<Section heading='Features'>
 
 		{LiItemList}
 
@@ -27,14 +27,19 @@ const Utilities = props => {
 			bg='accent'
 		>
 			<Image
-				src='/images/panel.png'
+				src='/images/panel.jpg'
 				alt='panel'
 				width='66.66%'
 			/>
+			<Text
+				variant='s4'
+				color='blacks.3'
+				p={3}
+				>
+			Working area control panel
+			</Text>
 		</Flex>
 
 	</Section>
 	)
 }
-
-export default Utilities

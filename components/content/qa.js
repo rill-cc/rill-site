@@ -1,32 +1,30 @@
 export const QA = [
 	{
-		id: '1',
-		title: 'Who is moderating content?',
-		desc: 'Moderation is managed by users depending on their access level. Researches and activists can raise issues and discuss them right within event nodes. All conversations are public. Everyone can report an issue.',
+		title: 'Is the platform free?',
+		desc: 'Yes, the project is a non-profit and runs on contributors support.',
 	},
 	{
-		id: '2',
-		title: 'What if I don\'t have work email but I am a researcher?',
-		desc: 'Please contact us at support@rill.cc.',
+		title: 'Who is moderating a content?',
+		desc: 'Moderation is managed by users depending on their access level. Researchers and activists can raise issues and discuss them right within event nodes. All conversations are public. Everyone can report an issue.',
 	},
 	{
-		id: '3',
-		title: 'Where are the boundaries of the environmental topic?',
-		desc: "Currently the boundaries are vague. It is to researcher's responsibility to publish meaningful information and community's duty to moderate content.",
+		title: 'How do you define a topic as "environmental"?',
+		desc: 'It is too early to set up strict boundaries. Currently, we are briefing invited research groups. When the platform launches, the community will start populating/abandoning topics.',
 	},
 	{
-		id: '4',
-		title: 'What is the concept of the platform?',
-		desc: 'The concept is based on a graph theory. It is also inspired by GitHub and Wikipedia.',
+		title: 'How to be invited in a research group?',
+		desc: 'Currently we work with various research areas. Since to goal is to create a network of events, we are expanding the network to adjacent fields.',
 	},
 	{
-		id: '5',
-		title: 'Is it free?',
-		desc: "Yes, the project is non-for-profit and running on contributor's support.",
+		title: 'Do you have a roadmap?',
+		desc: 'See "Stages" below.',
 	},
 	{
-		id: '6',
+		title: 'How registration with work email will be managed?',
+		desc: 'Currently we are inviting specific research groups to test out the platform. Once the registration is open, we will start manually accepting applications.',
+	},
+	{
 		title: 'How can I help the project?',
-		desc: 'Please checkout section "Requests" below or contact us at info@rill.cc.',
-	}
+		desc: 'Please check out the section "Requests" below or contact us directly.',
+	},
 ]

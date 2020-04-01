@@ -2,7 +2,7 @@ export const Stages = [
 	{
 		id: '1',
 		title: 'Stage 1',
-		desc: 'Proof of concept with small amount of data. See "Requests" section.',
+		desc: 'Proof of concept with small amount of data. See "Requests" below.',
 		tasks: [
 			{
 				id: '1',

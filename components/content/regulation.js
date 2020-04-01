@@ -12,7 +12,7 @@ export const Regulation = [
 			{
 				id: '2',
 				liTitle: 'L II',
-				liDesc: 'Employees of organizations engaged in public campaigns, art. They can start discussions.',
+				liDesc: 'Employees of organizations engaged in public campaigns or art. They can start and contribute to discussions.',
 			},
 			{
 				id: '3',
@@ -24,7 +24,7 @@ export const Regulation = [
 	{
 		id: '2',
 		rowTitle: 'Registration process',
-		rowDesc: 'To get access to L1, the user needs to register with his working email of a collaborating organization (e.g, name@org.edu). To get access to L2, the user needs to submit a registration form that will be approved by current members or moderators.',
+		rowDesc: 'To get access to L1, the user needs to register with their work email of a collaborating organization (e.g, name@org.edu). To get access to L2, the user needs to submit a registration form that will be approved by current members or moderators.',
 		children: [
 			{
 				id: '1',
@@ -56,7 +56,7 @@ export const Regulation = [
 			{
 				id: '2',
 				liTitle: 'R II',
-				liDesc: 'The event must have documented evidence, such as official research papers, agency reports, datasets, etc.',
+				liDesc: 'The event does not describe a global event and can be geolocated.',
 			},
 			{
 				id: '3',

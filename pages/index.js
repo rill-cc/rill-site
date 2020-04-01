@@ -1,12 +1,12 @@
 import React from 'react'
 import { Theme } from '../components/system/theme'
-import { Meta } from '../components/Meta'
 
 import {
+  Meta,
   Intro,
   For,
   How,
-  Utilities,
+  Features,
   Regulation,
   QA,
   Stages,
@@ -15,15 +15,13 @@ import {
   Footer,
 } from '../components/bridge'
 
-import HelperGrid from '../components/utils'
-
 const App = props =>
   <Theme>
-    <HelperGrid />
+    <Meta />
     <Intro />
     <For />
     <How />
-    <Utilities />
+    <Features />
     <Regulation />
     <QA />
     <Stages />

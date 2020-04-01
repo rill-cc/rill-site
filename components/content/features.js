@@ -1,4 +1,4 @@
-export const Utilities = [
+export const Features = [
 	{
 		id: '2',
 		title: 'Visualisation',

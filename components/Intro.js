@@ -19,7 +19,7 @@ const Intro = props =>
 				pb={{min: 8, sm: 0}}
 			>
 				<Text as='h1' variant='s1'>RILL—Common Connections.</Text>
-				<Text variant='s1'>Open platform that helps interconnect environmental events and track updates.</Text>
+				<Text variant='s1'>An open platform that helps interconnect environmental events and track updates.</Text>
 			</Flex>
 		</Flex>
 
@@ -34,7 +34,7 @@ const Intro = props =>
 			}}
 		>
 		<Image
-			src='/images/video.png' alt='platform'
+			src='/images/area-globe-dark.jpg' alt='platform'
 			width='100%'
 			height='100%'
 		/>
@@ -78,7 +78,7 @@ const Intro = props =>
 				color='whites.2'
 				pt='8'
 			>
-				Platform overview: 1) Selecting node, 2) Finding connections, 3) Creating new node.
+				Platform overview: Working area, Globe view.
 			</Text>
 		</Flex>
 

@@ -1,14 +1,14 @@
 export const For = {
-	researcher: [
+	researchers: [
 		{
 			id: '1',
 			title: 'See connections between events',
-			desc: 'Use visualization of causal relationships and structure your mental model.',
+			desc: 'Use visualization of causal relationships to structure your mental model.',
 		},
 		{
 			id: '2',
 			title: 'Collaborate with colleagues',
-			desc: 'Contribute to open research and get updates on interested subjects.',
+			desc: 'Contribute to open research and get updates on subjects that interest you.',
 		},
 		{
 			id: '3',
@@ -18,10 +18,10 @@ export const For = {
 		{
 			id: '4',
 			title: 'Get and analyze data',
-			desc: 'Use API to use data for personal projects.',
+			desc: 'Use Rill API for personal projects.',
 		},
 	],
-	activist: [
+	activists: [
 		{
 			id: '1',
 			title: 'Discover who is interested',
@@ -35,7 +35,7 @@ export const For = {
 		{
 			id: '3',
 			title: 'Collaborate with colleagues',
-			desc: 'Contribute to open research and get updates on interested subjects.',
+			desc: 'Contribute to open research and get updates on subjects that interest you.',
 		},
 		{
 			id: '4',
@@ -43,26 +43,26 @@ export const For = {
 			desc: 'See how engaged people are in the research topics you work with.',
 		},
 	],
-	observer: [
+	observers: [
 		{
 			id: '1',
-			title: 'Get full picture',
+			title: 'Get the full picture',
 			desc: 'Trace event connections yourself and make your own decisions.',
 		},
 		{
 			id: '2',
 			title: 'Discover subjects of interest',
-			desc: 'Follow updates of your interest subjects.',
+			desc: 'Explore the graph to find related areas of interest.',
 		},
 		{
 			id: '3',
 			title: 'Know what\'s happening around you',
-			desc: 'Subscribe for updates in your region or by problematics.',
+			desc: 'Subscribe for updates in your region or by problematic.',
 		},
 		{
 			id: '4',
 			title: 'Find out how to be involved',
-			desc: 'Find local researchers and activists to follow.',
+			desc: 'Find researchers and activists to follow.',
 		},
 	],
 }

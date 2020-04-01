@@ -1,7 +1,7 @@
 import { Intro } from './content/intro'
 import { For } from './content/for'
 import { How } from './content/how'
-import { Utilities } from './content/utilities'
+import { Features } from './content/features'
 import { Regulation } from './content/regulation'
 import { QA } from './content/qa'
 import { Stages } from './content/stages'
@@ -11,7 +11,7 @@ export {
 	Intro,
 	For,
 	How,
-	Utilities,
+	Features,
 	Regulation,
 	QA,
 	Stages,

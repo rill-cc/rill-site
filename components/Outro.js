@@ -17,7 +17,7 @@ const Outro = props =>
 				borderColor: 'blacks.0',
 			}}
 		>
-			If you find the project interesting, you can follow updates by subscribing to newsletter.
+			If you find the project interesting, you can follow updates by subscribing to the newsletter.
 		</Text>
 
 		<Flex

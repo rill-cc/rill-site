@@ -14,7 +14,7 @@ export const Signup = props =>
 		<Input
 			flexGrow='1'
 			px={{ min: 2, sm: 3 }}
-			placeholder='Enter email'
+			placeholder='Get updates'
 		/>
 		<Button
 			width='fit-content'

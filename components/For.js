@@ -1,10 +1,10 @@
 import { useRef, useState, useEffect } from 'react'
 import { Flex, Text, Link } from './system'
 import { Layout } from './bridge'
-import { Tab, ResearcherC, ActivistC, ObserverC } from './ForEls'
+import { Tab, ResearchersC, ActivistsC, ObserversC } from './ForEls'
 
 const For = props => {
-	const [activeTab, setActiveTab] = useState('Researcher')
+	const [activeTab, setActiveTab] = useState('Researchers')
 	const handleTabs = (e) => setActiveTab(e.target.name)
 
 	return (
@@ -26,16 +26,16 @@ const For = props => {
 				gridColumn={{ min: '5/-1', sm: '4/-1', md: '4/-1', lg: '4/10' }}
 				flexes={{ min: 'css', sm: 'rsc', lg: 'rbc' }}
 			>
-				<Tab handleTabs={handleTabs} state={activeTab} name='Researcher' />
-				<Tab handleTabs={handleTabs} state={activeTab} name='Activist' />
-				<Tab handleTabs={handleTabs} state={activeTab} name='Observer' />
+				<Tab handleTabs={handleTabs} state={activeTab} name='Researchers' />
+				<Tab handleTabs={handleTabs} state={activeTab} name='Activists' />
+				<Tab handleTabs={handleTabs} state={activeTab} name='Observers' />
 			</Flex>
 		</Layout>
 
 		<Flex>
-			{activeTab === 'Researcher' && <ResearcherC />}
-			{activeTab === 'Activist' && <ActivistC />}
-			{activeTab === 'Observer' && <ObserverC />}
+			{activeTab === 'Researchers' && <ResearchersC />}
+			{activeTab === 'Activists' && <ActivistsC />}
+			{activeTab === 'Observers' && <ObserversC />}
 		</Flex>
 	
 	</>
