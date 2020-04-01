@@ -8,7 +8,7 @@ const QA = props => {
 
 	const QAItemList = C.QA.map(item =>
 		<QAItem
-			key={item.id}
+			key={item.title}
 			title={item.title}
 			desc={item.desc}
 		/>
@@ -59,6 +59,7 @@ const QA = props => {
 							color='accent'
 							width='100%'
 							p={3}
+							href='mailto:rillcc@protonmail.com'
 						>
 							Contact
 						</Button>

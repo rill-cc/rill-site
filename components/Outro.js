@@ -73,6 +73,7 @@ const Outro = props =>
 				mb={{min: 7, md: 8}}
 				bg='accent'
 				color='black'
+				href='mailto:rillcc@protonmail.com'
 			>
 				Contact
 			</Button>

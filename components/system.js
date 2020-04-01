@@ -23,8 +23,7 @@ export const Link = forwardRef((props, ref) =>
 export const Button = forwardRef((props, ref) =>
   <Box
     ref={ref}
-    as='button'
-    variant='primary'
+    as='a'
     px={{ min: 2, sm: 3 }}
     py={3}
     {...props}
