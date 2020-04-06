@@ -1,12 +1,12 @@
-import { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import { Flex, Grid, Text, Link } from './system'
 import { C, Section } from './bridge'
 import { IconExtLink } from './IconExtLink'
 
-const Requests = props => {
-
-	const RequestItemList = C.Requests.requests.map(item =>
-		<Grid as='li'
+export default function Requests() {
+	const RequestItemList = C.Requests.requests.map(item => (
+		<Grid
+			as='li'
 			key={item.id}
 			width='100%'
 			ps='ysm'
@@ -15,14 +15,11 @@ const Requests = props => {
 				borderColor: 'blacks.0',
 			}}
 			gridTemplateColumns={{
-					min: 'repeat(12, 1fr)',
-					sm: 'repeat(6, 1fr)'
-				}}
+				min: 'repeat(12, 1fr)',
+				sm: 'repeat(6, 1fr)',
+			}}
 		>
-			<Text
-				gridColumn={{ min: '1/7', sm: '1/4' }}
-				ps='lsm'
-			>
+			<Text gridColumn={{ min: '1/7', sm: '1/4' }} ps='lsm'>
 				{item.title}
 			</Text>
 			<Link
@@ -34,22 +31,20 @@ const Requests = props => {
 				sx={{ position: 'relative' }}
 			>
 				{item.linkTitle}
-				<Flex as='span'
+				<Flex
+					as='span'
 					sx={{
 						display: [null, 'none', null, 'flex'],
 					}}
 				>
-					<IconExtLink/>
+					<IconExtLink />
 				</Flex>
 			</Link>
 		</Grid>
-		)
+	))
 
 	return (
-		<Section
-			heading='Requests'
-			keepOpen={false}
-		>
+		<Section heading='Requests' keepOpen={false}>
 			<Flex
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
 				ps='sm'
@@ -61,14 +56,10 @@ const Requests = props => {
 			>
 				<Text variant='s2'>{C.Requests.desc}</Text>
 			</Flex>
-			
-			<Flex as='ul'
-				gridColumn={{ min: '1/-1', sm: '7/-1' }}
-			>
+
+			<Flex as='ul' gridColumn={{ min: '1/-1', sm: '7/-1' }}>
 				{RequestItemList}
 			</Flex>
 		</Section>
-		)
+	)
 }
-
-export default Requests

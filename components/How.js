@@ -1,13 +1,13 @@
-import { useRef, useState, useEffect } from 'react'
-import { Flex, Text, Link } from './system'
+import React, { useState } from 'react'
+import { Flex, Text } from './system'
 import { C, Section } from './bridge'
 import { Fig01, Fig02 } from './Figures.js'
 import { Tab } from './HowEls.js'
 
-const Utilities = props => {
+export default function Utilities() {
 	// Switch tabs
 	const [activeTab, setActiveTab] = useState('Fig1')
-	const handleTabs = (e) => setActiveTab(e.target.name)
+	const handleTabs = e => setActiveTab(e.target.name)
 
 	const StepList = C.How.steps.map(step =>
 		<Text as='li'
@@ -87,5 +87,3 @@ const Utilities = props => {
 	</Section>
 	)
 }
-
-export default Utilities

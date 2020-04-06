@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Layout, Heading } from './bridge'
 
 export const Section = props => {

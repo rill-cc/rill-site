@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Flex, Text } from './system'
 import { IconReveal } from './IconReveal'
 
@@ -6,7 +6,7 @@ export const QAItem = props => {
 	const [open, setOpen] = useState(false)
 	const [height, setHeight] = useState('')
 	const ref = useRef(null)
-	
+
 	const toggleQuestion = () => {
 		setOpen(!open)
 		setHeight(open === false ? '0px' : '')
@@ -34,9 +34,10 @@ export const QAItem = props => {
 				{props.title}
 				<IconReveal isOpen={open} />
 			</Text>
-			<Text as='span'
+			<Text
+				as='span'
 				ref={ref}
-				width={{min: '100%', sm: '88%'}}
+				width={{ min: '100%', sm: '88%' }}
 				variant='s3'
 				color='blacks.3'
 				overflow='hidden'

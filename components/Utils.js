@@ -10,12 +10,12 @@ const HelperGrid = styled(Flex)`
   height: 100%;
   z-index: 9999;
   pointer-events: none;
-`;
+`
 
 const HelperColumn = styled(Flex)`
   border-right: 1px solid rgba(0, 0, 255, 0.16);
   width: calc(100vw / 12);
-`;
+`
 
 export default () => {
   const [active, setActive] = useState(false)

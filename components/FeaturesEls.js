@@ -1,14 +1,16 @@
+import React from 'react'
 import { Flex, Grid, Text } from './system'
 import { Pict01, Pict02, Pict03 } from './Pictograms'
 
-export const LiItem = props =>
-	<Grid as='li'
+export const LiItem = props => (
+	<Grid
+		as='li'
 		gridColumn={props.column}
 		gridRow={props.row}
 		ps='ysm'
 		pb={{ min: 5, sm: 4 }}
 		sx={{
-			borderBottom: '1px solid',	
+			borderBottom: '1px solid',
 			borderColor: 'blacks.0',
 		}}
 		gridTemplateColumns={{
@@ -16,11 +18,9 @@ export const LiItem = props =>
 			sm: 'repeat(6, 1fr)',
 		}}
 	>
-		<Flex
-			gridColumn={{ min: '1/-1', xsm: '1/10', md: '1/4' }}
-			flexes='css'
-		>
-			<Text as='h3'
+		<Flex gridColumn={{ min: '1/-1', xsm: '1/10', md: '1/4' }} flexes='css'>
+			<Text
+				as='h3'
 				variant='s3'
 				pb={2}
 				ps='xsm'
@@ -30,20 +30,16 @@ export const LiItem = props =>
 				{props.icon === '2' && <Pict01 />}
 				{props.icon === '3' && <Pict02 />}
 				{props.icon === '4' && <Pict03 />}
-				
+
 				{props.title}
-				
 			</Text>
-			<Text
-				variant='s3'
-				color='blacks.3'
-				ps='xsm'
-			>
+			<Text variant='s3' color='blacks.3' ps='xsm'>
 				{props.desc}
 			</Text>
 		</Flex>
 	</Grid>
+)
 
-	LiItem.defaultProps = {
-		column: {min: '1/-1', sm: '1/7'},
-	}
+LiItem.defaultProps = {
+	column: { min: '1/-1', sm: '1/7' },
+}

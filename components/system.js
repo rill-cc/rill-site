@@ -3,24 +3,15 @@ import { Box, Flex, Grid } from './system/box'
 
 export { Box, Flex, Grid }
 
-export const Text = forwardRef((props, ref) =>
-  <Box
-    ref={ref}
-    as='p'
-    tx='text'
-    {...props}
-  />
-)
+export const Text = forwardRef((props, ref) => (
+  <Box ref={ref} as='p' tx='text' {...props} />
+))
 
-export const Link = forwardRef((props, ref) =>
-  <Text
-    as='a'
-    variant='link'
-    {...props}
-  />
-)
+export const Link = forwardRef((props, ref) => (
+  <Text as='a' variant='link' {...props} />
+))
 
-export const Button = forwardRef((props, ref) =>
+export const Button = forwardRef((props, ref) => (
   <Box
     ref={ref}
     as='a'
@@ -41,9 +32,9 @@ export const Button = forwardRef((props, ref) =>
       borderRadius: 0,
     }}
   />
-)
+))
 
-export const Input = forwardRef((props, ref) =>
+export const Input = forwardRef((props, ref) => (
   <Box
     ref={ref}
     as='input'
@@ -63,9 +54,9 @@ export const Input = forwardRef((props, ref) =>
       bg: 'transparent',
     }}
   />
-)
+))
 
-export const Image = forwardRef((props, ref) =>
+export const Image = forwardRef((props, ref) => (
   <Box
     ref={ref}
     as='img'
@@ -75,4 +66,4 @@ export const Image = forwardRef((props, ref) =>
       height: 'auto',
     }}
   />
-)
+))

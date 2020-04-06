@@ -1,6 +1,7 @@
+import React from 'react'
 import { Link } from './system'
 
-export const Tab = props =>
+export const Tab = props => (
 	<Link
 		name={props.name}
 		onClick={props.onChange}
@@ -9,3 +10,4 @@ export const Tab = props =>
 		variant='s4'
 		{...props}
 	/>
+)

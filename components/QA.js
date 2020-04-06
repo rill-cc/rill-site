@@ -1,38 +1,22 @@
-import { useRef, useState, useEffect } from 'react'
-import { Flex, Text, Image, Button } from './system'
+import React from 'react'
+import { Flex, Text, Button } from './system'
 import { C, Section } from './bridge'
 
 import { QAItem } from './QAEls'
 
-const QA = props => {
-
-	const QAItemList = C.QA.map(item =>
-		<QAItem
-			key={item.title}
-			title={item.title}
-			desc={item.desc}
-		/>
-	)
+export default function QA() {
+	const QAItemList = C.QA.map(item => (
+		<QAItem key={item.title} title={item.title} desc={item.desc} />
+	))
 
 	return (
-		<Section
-			heading='Q&A'
-			keepOpen={false}
-		>
-			<Flex
-				gridColumn={{ min: '1/-1', sm: '1/7' }}
-			>
-				{QAItemList}
-			</Flex>
-			
-			<Flex
-				gridColumn={{ min: '1/-1', sm: '7/-1' }}
-				bg='accent'
-				flexes='ccc'
-			>
+		<Section heading='Q&A' keepOpen={false}>
+			<Flex gridColumn={{ min: '1/-1', sm: '1/7' }}>{QAItemList}</Flex>
+
+			<Flex gridColumn={{ min: '1/-1', sm: '7/-1' }} bg='accent' flexes='ccc'>
 				<Flex
 					ps='sm'
-					pb={{min: 8, sm: 0}}
+					pb={{ min: 8, sm: 0 }}
 					width='100%'
 					height='50%'
 					sx={{
@@ -48,12 +32,9 @@ const QA = props => {
 					width='100%'
 					height='50%'
 					ps='sm'
-					py={{min: 8, sm: 0}}
+					py={{ min: 8, sm: 0 }}
 				>
-					<Flex
-						flexes='ccc'
-						width='100%'
-					>
+					<Flex flexes='ccc' width='100%'>
 						<Button
 							bg='black'
 							color='accent'
@@ -64,12 +45,8 @@ const QA = props => {
 							Contact
 						</Button>
 					</Flex>
-
-			</Flex>
-
+				</Flex>
 			</Flex>
 		</Section>
-		)
+	)
 }
-
-export default QA

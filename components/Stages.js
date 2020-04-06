@@ -1,11 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import { Flex, Grid, Text } from './system'
 import { C, Section } from './bridge'
 import { IconTask } from './IconTask'
 
-const Stages = props => {
-
-	const StageItemList = C.Stages.map(item =>
+const Stages = () => {
+	const StageItemList = C.Stages.map(item => (
 		<React.Fragment key={item.id}>
 			<Grid
 				gridColumn={{ min: '1/-1', sm: '1/7' }}
@@ -17,7 +16,7 @@ const Stages = props => {
 				}}
 				gridTemplateColumns={{
 					min: 'repeat(12, 1fr)',
-					md: 'repeat(6, 1fr)'
+					md: 'repeat(6, 1fr)',
 				}}
 			>
 				<Flex
@@ -25,24 +24,17 @@ const Stages = props => {
 					flexes='css'
 					pb={{ min: 4, sm: 0 }}
 				>
-					<Text
-						pb={2}
-						ps='xsm'
-						variant='s3'
-					>
+					<Text pb={2} ps='xsm' variant='s3'>
 						{item.title}
 					</Text>
-					<Text
-						ps='xsm'
-						variant='s3'
-						color='blacks.3'
-					>
+					<Text ps='xsm' variant='s3' color='blacks.3'>
 						{item.desc}
 					</Text>
 				</Flex>
 			</Grid>
 
-			<Flex as='ul'
+			<Flex
+				as='ul'
 				gridColumn={{ min: '1/-1', sm: '7/-1' }}
 				bg='accent'
 				sx={{
@@ -55,12 +47,13 @@ const Stages = props => {
 					width='100%'
 					py={{ min: 8, sm: 10 }}
 				>
-					{item.tasks.map(task =>
-						<Text as='li'
+					{item.tasks.map(task => (
+						<Text
+							as='li'
 							key={task.id}
 							pb={1}
 							ml={{ min: 6, sm: 0 }}
-							width={{ min: 3/4, sm: 2/3 }}
+							width={{ min: 3 / 4, sm: 2 / 3 }}
 							variant='s2'
 							color={task.completed ? 'blacks.2' : 'blacks.4'}
 							sx={{ position: 'relative' }}
@@ -68,20 +61,17 @@ const Stages = props => {
 							<IconTask completed={task.completed} />
 							{task.desc}
 						</Text>
-						)}
-					</Flex>
+					))}
+				</Flex>
 			</Flex>
 		</React.Fragment>
-	)
+	))
 
 	return (
-		<Section
-			heading='Stages'
-			keepOpen={false}
-		>
+		<Section heading='Stages' keepOpen={false}>
 			{StageItemList}
 		</Section>
-		)
+	)
 }
 
 export default Stages
