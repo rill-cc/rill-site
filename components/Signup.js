@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Flex, Input, Box } from './system'
 
 const Button = props => (
 	<Box
-		as='input'
+		as='button'
 		px={{ min: 2, sm: 3 }}
 		py={3}
 		{...props}
@@ -19,11 +19,34 @@ const Button = props => (
 			bg: 'inherit',
 			border: 0,
 			borderRadius: 0,
+			':hover': { color: 'blacks.3', cursor: 'pointer' },
+			':active': {
+				color: 'blacks.3',
+			}
 		}}
 	/>
 )
 
 export const Signup = props => {
+
+	const [value, setValue] = useState('')
+	const handleChange = e => {
+		setValue(e.target.value)
+	}
+	const [signedUp, setSignedUp] = useState(false)
+	const handleSubmit = e => {
+		e.preventDefault()
+		fetch('https://rill.us19.list-manage.com/subscribe/post', {
+			method: 'POST',
+			mode: 'no-cors',
+			body: new FormData(e.target),
+		})
+		.then(() => {
+			setSignedUp(true)
+			setValue('')
+		})
+	}
+
 	return (
 		<Flex
 			width='100%'
@@ -39,8 +62,7 @@ export const Signup = props => {
 				as='form'
 				width='100%'
 				flexes='rss'
-				action='https://rill.us19.list-manage.com/subscribe/post'
-				method='POST'
+				onSubmit={handleSubmit}
 			>
 				<Input
 					type='hidden'
@@ -55,12 +77,13 @@ export const Signup = props => {
 					name='MERGE0'
 					id='MERGE0'
 					size='25'
-					deafultValue=''
+					onChange={handleChange}
+					value={value}
 					placeholder='Get updates'
 					px={{ min: 2, sm: 3 }}
 					flexGrow='1'
 				/>
-				<Button type='submit' name='signup' defaultValue='Sign up' />
+				<Button type='submit' name='signup'>{signedUp ? 'Thanks' : 'Sign up'}</Button>
 			</Flex>
 		</Flex>
 	)
