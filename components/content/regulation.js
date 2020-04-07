@@ -68,7 +68,7 @@ export const Regulation = [
 	{
 		id: '4',
 		rowTitle: 'Connection reviews',
-		rowDesc: 'The platform provides different levels of access to content editing.',
+		rowDesc: 'The link can be discussed and reviewed by peers to which connected nodes belong. Links include a status system.',
 		children: [
 			{
 				id: '1',
