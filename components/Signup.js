@@ -1,29 +1,16 @@
 import React, { useState } from 'react'
 import { Flex, Input, Box } from './system'
 
-const Button = props => (
+const Submit = props => (
   <Box
     as='button'
     px={{ min: 2, sm: 3 }}
     py={3}
-    {...props}
     sx={{
-      appearance: 'none',
-      display: 'inline-block',
-      textAlign: 'center',
-      lineHeight: 'inherit',
-      textTransform: 'uppercase',
-      textDecoration: 'none',
-      fontSize: 'inherit',
-      color: 'inherit',
-      bg: 'inherit',
-      border: 0,
-      borderRadius: 0,
       ':hover': { color: 'blacks.3', cursor: 'pointer' },
-      ':active': {
-        color: 'blacks.3',
-      },
+      ':active': { color: 'blacks.3' },
     }}
+    {...props}
   />
 )
 
@@ -71,9 +58,9 @@ export const Signup = props => {
           px={{ min: 2, sm: 3 }}
           flexGrow='1'
         />
-        <Button type='submit' name='signup'>
+        <Submit type='submit' name='signup'>
           {signedUp ? 'Thanks' : 'Sign up'}
-        </Button>
+        </Submit>
       </Flex>
     </Flex>
   )
