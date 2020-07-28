@@ -1,22 +1,18 @@
 export const For = {
 	researchers: [
 		{
-			id: '1',
 			title: 'See connections between events',
 			desc: 'Use visualization of causal relationships to structure your mental model.',
 		},
 		{
-			id: '2',
 			title: 'Collaborate with colleagues',
 			desc: 'Contribute to open research and get updates on subjects that interest you.',
 		},
 		{
-			id: '3',
 			title: 'Draw attention to your research',
 			desc: 'Link your studies with events happening in the field.',
 		},
 		{
-			id: '4',
 			title: 'Get and analyze data',
 			desc: 'Use Rill API for personal projects.',
 		},
@@ -57,7 +53,7 @@ export const For = {
 		{
 			id: '3',
 			title: 'Know what\'s happening around you',
-			desc: 'Subscribe for updates in your region or by problematic.',
+			desc: 'Subscribe for updates in your region or follow topics.',
 		},
 		{
 			id: '4',

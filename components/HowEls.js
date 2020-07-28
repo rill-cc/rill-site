@@ -6,7 +6,6 @@ export const Tab = props => (
 		name={props.name}
 		onClick={props.onChange}
 		link={props.activeTab === props.name ? 'underline' : null}
-		// color={props.activeTab === props.name ? null : 'blacks.3'}
 		variant='s4'
 		{...props}
 	/>

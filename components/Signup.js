@@ -19,12 +19,15 @@ export const Signup = props => {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch('https://rill.us19.list-manage.com/subscribe/post', {
+    fetch('rill.us19.list-manage.com/subscribe/post', {
       method: 'POST',
       mode: 'no-cors',
       body: new FormData(form),
     }).then(() => {
       setSignedUp(true)
+      setTimeout(() => {
+        setSignedUp(false)
+      }, 3000);
       form.reset()
     })
   }
@@ -59,7 +62,7 @@ export const Signup = props => {
           flexGrow='1'
         />
         <Submit type='submit' name='signup'>
-          {signedUp ? 'Thanks' : 'Sign up'}
+          {signedUp ? 'Thanks!' : 'Sign up'}
         </Submit>
       </Flex>
     </Flex>

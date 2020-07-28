@@ -7,7 +7,7 @@ export const Regulation = [
 			{
 				id: '1',
 				liTitle: 'L I',
-				liDesc: 'Faculty, students, and employees of companies that have confirmed scientific or research background. They can create nodes and links.',
+				liDesc: 'Faculty, students, and employees of companies that have confirmed scientific or research background. They can create nodes and connections.',
 			},
 			{
 				id: '2',
@@ -68,12 +68,12 @@ export const Regulation = [
 	{
 		id: '4',
 		rowTitle: 'Connection reviews',
-		rowDesc: 'The link can be discussed and reviewed by peers to which connected nodes belong. Links include a status system.',
+		rowDesc: 'The connection can be discussed and reviewed by peers to which connected nodes belong. Connections include a status system.',
 		children: [
 			{
 				id: '1',
 				liTitle: 'C I',
-				liDesc: 'Set, not reviewed',
+				liDesc: 'Requested, not reviewed',
 			},
 			{
 				id: '2',

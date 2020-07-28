@@ -12,6 +12,10 @@ export const QA = [
 		desc: 'It is too early to set up strict boundaries. Currently, we are briefing invited research groups. When the platform launches, the community will start populating/abandoning topics.',
 	},
 	{
+		title: 'Why do all events must have geolocation?',
+		desc: 'We request the nodes to be as specific as possible. Describing meta-events makes it hard to create meaningful connections.',
+	},
+	{
 		title: 'How to be invited in a research group?',
 		desc: 'Currently we work with various research areas. Since to goal is to create a network of events, we are expanding the network to adjacent fields.',
 	},

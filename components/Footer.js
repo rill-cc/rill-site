@@ -11,10 +11,7 @@ export default function Footer() {
 				color='blacks.3'
 				textAlign='center'
 			>
-				RILL.CC, 2019—now.
-				<br />
-				Project RILL is in the process of obtaining California registered
-				501(c)(3) organization type.
+				RILL.CC, 2018—now.
 			</Text>
 		</Layout>
 	)
